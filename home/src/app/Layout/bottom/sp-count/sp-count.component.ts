@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , Input } from '@angular/core';
 
 @Component({
   selector: 'app-sp-count',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./sp-count.component.scss']
 })
 export class SpCountComponent {
+  @Input () checkHiden :boolean  =false
 
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 
 @Component({
   selector: 'app-bottom',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./bottom.component.scss']
 })
 export class BottomComponent {
-
+  @Input() checkCount :any
 }
