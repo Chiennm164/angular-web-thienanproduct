@@ -13,6 +13,9 @@ import { KhachHangNoiVeChungToiComponent } from './Layout/bottom/sp-count/khach-
 import { LogoKhachHangComponent } from './Layout/bottom/sp-count/logo-khach-hang/logo-khach-hang.component';
 import { TemplateDiemKhacBietComponent } from './Layout/bottom/sp-count/diem-khac-biet/template-diem-khac-biet/template-diem-khac-biet.component';
 import { TemplateKhachHangComponent } from './Layout/bottom/sp-count/khach-hang-noi-ve-chung-toi/template-khach-hang/template-khach-hang.component';
+import { DichVuComponent } from './page/dich-vu/dich-vu.component';
+import { SanXuatPhimHinhAnhComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-hinh-anh.component';
+import { KhachHangPhanHoiComponent } from './Layout/khach-hang-phan-hoi/khach-hang-phan-hoi.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { TemplateKhachHangComponent } from './Layout/bottom/sp-count/khach-hang-
     KhachHangNoiVeChungToiComponent,
     LogoKhachHangComponent,
     TemplateDiemKhacBietComponent,
-    TemplateKhachHangComponent
+    TemplateKhachHangComponent,
+    DichVuComponent,
+    SanXuatPhimHinhAnhComponent,
+    KhachHangPhanHoiComponent
   ],
   imports: [
     BrowserModule
