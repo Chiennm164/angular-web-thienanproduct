@@ -11,10 +11,10 @@
       <div id="sp-menu" class="col-lg-8 ">
         <nav class="sp-menu-nav" role="navigation">
           <ul class="sp-menu-ul">
-            <li class="sp-menu-li">
+            <li *ngFor="let menu of listMenu" class="sp-menu-li">
               <div class="sp-menu-li-wrap">
-                <a class="sp-menu-li-text" href="">Dịch vụ</a>
-                <i><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                <a class="sp-menu-li-text" href="">{{menu.name}}</a>
+                <i *ngIf="menu.valueLv1.length>0"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                     class="bi bi-chevron-down" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                       d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
@@ -23,10 +23,10 @@
               </div>
               <div class="sp-dropdown">
                 <ul class="sp-dropdown-ul">
-                  <li class="sp-dropdown-li">
+                  <li *ngFor="let menuLv2 of menu.valueLv1" class="sp-dropdown-li">
                     <div class="sp-dropdown-li-wrap">
-                      <a class="sp-dropdown-li-text" href="">SẢN XUẤT PHIM - HÌNH ẢNH</a>
-                      <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      <a class="sp-dropdown-li-text" href="">{{menuLv2.name}}</a>
+                      <i *ngIf="menuLv2.valueLv2.length>0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                           class="bi bi-chevron-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd"
                             d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
@@ -34,136 +34,18 @@
                     </div>
                     <div class="sp-dropdown sp-dropdown-lv2">
                       <ul class="sp-dropdown-ul">
-                        <li class="sp-dropdown-li">
+                        <li *ngFor="let menuLv3 of menuLv2.valueLv2" class="sp-dropdown-li">
                           <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href=""> SẢN XUẤT TVC QUẢNG CÁO</a>
+                            <a class="sp-dropdown-li-text" href=""> {{menuLv3}}</a>
                           </div>
                         </li>
-                        <li class="sp-dropdown-li">
-                          <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href=""> SẢN XUẤT PHIM VIRAL VIDEO</a>
-                          </div>
-                        </li>
-                        <li class="sp-dropdown-li">
-                          <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href=""> SẢN XUẤT PHIM DOANH NGHIỆP</a>
-                          </div>
-                        </li>
-                        <li class="sp-dropdown-li">
-                          <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href=""> SẢN XUẤT PHIM QUẢNG CÁO 3D ANIMATION</a>
-                          </div>
-                        </li>
-                        <li class="sp-dropdown-li">
-                          <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href=""> PHIM DỰ ÁN BẤT ĐỘNG SẢN</a>
-                          </div>
-                        </li>
-                        <li class="sp-dropdown-li">
-                          <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href="">CHỤP ẢNH QUẢNG CÁO</a>
-                          </div>
-                        </li>
-                        <li class="sp-dropdown-li">
-                          <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href="">THIẾT KẾ QUẢNG CÁO 2D</a>
-                          </div>
-                        </li>
-                        <li class="sp-dropdown-li">
-                          <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href=""> THU ÂM QUẢNG CÁO - RADIO VOICE</a>
-                          </div>
-                        </li>
-                        <li class="sp-dropdown-li">
-                          <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href="">SẢN XUẤT CHƯƠNG TRÌNH TRUYỀN HÌNH</a>
-                          </div>
-                        </li>
-
                       </ul>
-                    </div>
-                  </li>
-                  <li class="sp-dropdown-li">
-                    <div class="sp-dropdown-li-wrap">
-                      <a class="sp-dropdown-li-text" href="">BOOKING QUẢNG CÁO
-                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                          </svg></i>
-                      </a>
-                    </div>
-                  </li>
-                  <li class="sp-dropdown-li">
-                    <div class="sp-dropdown-li-wrap">
-                      <a class="sp-dropdown-li-text" href="">TRUYỀN THÔNG ONLINE
-
-                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                          </svg></i>
-                      </a>
                     </div>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="sp-menu-li">
-              <div class="sp-menu-li-wrap">
-                <a class="sp-menu-li-text" href="">Sản phẩm</a>
-                <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                  </svg>
-                </i>
-              </div>
-            </li>
-            <li class="sp-menu-li">
-              <div class="sp-menu-li-wrap">
-                <a class="sp-menu-li-text" href="">Báo giá</a>
-                <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                  </svg>
-                </i>
-              </div>
-            </li>
-            <li class="sp-menu-li">
-              <div class="sp-menu-li-wrap">
-                <a class="sp-menu-li-text" href="">Về VietstarMax</a>
-                <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                  </svg>
-                </i>
-              </div>
-            </li>
-            <li class="sp-menu-li">
-              <div class="sp-menu-li-wrap">
-                <a class="sp-menu-li-text" href="">Blog</a>
-                <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                  </svg>
-                </i>
-              </div>
-            </li>
-            <li class="sp-menu-li">
-              <div class="sp-menu-li-wrap">
-                <a class="sp-menu-li-text" href="">Liên hệ tư vấn</a>
-                <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                  </svg>
-                </i>
-              </div>
-            </li>
+
           </ul>
         </nav>
       </div>
