@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.active-lang {
+  color: #b8292f !important;
+}
+.title  {
+  margin-bottom: 30px;
+  .title-count {
+    text-transform: none;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    line-height: 38.4px;
+
+    &::after{
+      content: "";
+      display: block;
+      height: 2px;
+      background: url(https://vietstarmax.vn/images/0new/line.png) no-repeat center;
+      top: 48px;
+      width: 10%;
+      left: 45%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+    }
+  }
+}

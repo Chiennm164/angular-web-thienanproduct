@@ -1,0 +1,74 @@
+#sp-fixed-btm {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-top: 30px;
+
+  .slogan {
+    .slogan-header {
+      text-align: center;
+      .slogan-title {
+        font-size: 34px;
+        color: #444;
+      }
+      .slogan-des {
+        text-align: center;
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0px 0px 16px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .sp-container-fluid {
+    width: 100%;
+    .imgQuayPhim {
+      img {
+        width: 100%;
+      }
+    }
+    .sologan {
+      background-color: #b8292f;
+      .sologan-wrap {
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          text-transform: uppercase;
+          font-size: 31px;
+          margin-bottom: 0px;
+          color: #fff;
+        }
+        .des {
+          font-size: 16px;
+          color: #fff;
+          padding-bottom: 16px;
+        }
+        .btn-sologan {
+          display: flex;
+          border: 2px solid #fff;
+          width: fit-content;
+          border-radius: 25px;
+          .btn-sologa-wrap {
+            display: flex;
+            padding: 5px 20px;
+            align-items: center;
+            .images {
+              // background-color: #fff;
+              padding-right: 10px;
+            }
+            .text {
+              background: transparent;
+              cursor: pointer;
+              color: #fff;
+              text-transform: uppercase;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}

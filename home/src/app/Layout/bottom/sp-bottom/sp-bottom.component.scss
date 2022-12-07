@@ -1,0 +1,33 @@
+#sp-bottom {
+  background-color: #231f20;
+  color: #fff;
+  .sp-container-fluid {
+    width: 100%;
+
+    .sp-bottom-wrap {
+      padding: 60px 0;
+      color: #a2a2a2;
+       .title {
+        font-weight: 700;
+        margin: 0 0 30px;
+        padding-top: 20px;
+
+      }
+       .des {
+        display: flex;
+        flex-direction: column;
+         .des-item {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+.outstanding{
+
+  font-weight: 700;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 18px;
+}

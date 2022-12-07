@@ -1,0 +1,19 @@
+#logoKhachHang {
+  display: inline-block;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .lgkh-wrap {
+    display: flex;
+    .lgkh-item {
+      padding: 2px;
+      .lgkh-item-wrap {
+        border: 1px solid #efefef;
+        img {
+          width: 100%;
+          padding: 2px;
+        }
+      }
+    }
+  }
+}
