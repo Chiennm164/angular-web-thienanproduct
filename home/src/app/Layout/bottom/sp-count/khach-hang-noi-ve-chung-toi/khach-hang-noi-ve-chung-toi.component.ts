@@ -3,22 +3,20 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 @Component({
   selector: 'app-khach-hang-noi-ve-chung-toi',
   templateUrl: './khach-hang-noi-ve-chung-toi.component.html',
-  styleUrls: ['./khach-hang-noi-ve-chung-toi.component.scss']
+  styleUrls: ['./khach-hang-noi-ve-chung-toi.component.scss'],
 })
 export class KhachHangNoiVeChungToiComponent {
-
-
-  // @Input() list: any[] = [
-  //   { link: '#a', text: 'Dịch vụ' },
-  //   { link: '#b', text: 'Dịch vụ TVC' },
-  // ];
+  @Input() list: any[] = [
+    { link: '#a', text: 'Dịch vụ' },
+    { link: '#b', text: 'Dịch vụ TVC' },
+  ];
 
   lenghtList: number = 0;
   marginLeft: number = 0;
   constructor(private elRef: ElementRef) {}
 
   ngOnInit(): void {
-    // this.lenghtList = this.list.length - 1;
+    this.lenghtList = this.list.length - 1;
     const items = this.elRef.nativeElement.querySelector('.items');
     const item = this.elRef.nativeElement.querySelector('.item');
     const itemAll = this.elRef.nativeElement.querySelectorAll('.item');

@@ -1,0 +1,56 @@
+.nav{
+
+    ul.sppb-nav{
+        background: linear-gradient(45deg, #b8292f 0%, #ed5f6d 100%);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        li{
+            text-align: center;
+            a{
+                display: block;
+                padding: 13px 15px;
+                font-size: 14px;
+                color: #fff;
+                font-weight: 600;
+                line-height: 1.42857143;
+                text-transform: uppercase;
+            }
+        }
+        .active{
+            &:first-child{
+                &::after{
+                    content: "";
+                    width: 11%;
+                    display: block;
+                    margin-top: -8px;
+                    position: absolute;
+                    background: url(https://vietstarmax.vn/templates/vietstarmax/images/tab-active.png) no-repeat right;
+                    height: 2px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 787px) {
+    .nav{
+        ul.sppb-nav{
+
+            li{
+                a{
+                    padding: 10px 5px;
+                    font-size: 14px;
+                }
+            }
+            .active{
+                &::after{
+                    content: "";
+                    background-image: none;
+                }
+            }
+        }
+    }
+}

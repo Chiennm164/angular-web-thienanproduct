@@ -1,0 +1,10 @@
+<div class="nav">
+    <ul class="sppb-nav sppb-nav-lines" role="tablist">
+
+        <li class="active" *ngFor="let item of list">
+                <a data-toggle="sppb-tab" id="#sppb-content1-1" class=" " [href]="item.url" role="tab"
+                aria-controls="#sppb-tab1-1" aria-selected="true"> {{item.text}}</a>
+        </li>
+
+    </ul>
+</div>

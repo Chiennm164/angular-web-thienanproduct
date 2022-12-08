@@ -1,0 +1,29 @@
+<div class="content dich-vu">
+    <div class="row body-wrapper">
+        <div class="tvc-gioi-thieu">
+            <div class="title">{{list.title}}</div>
+        </div>
+
+        <div class="col-12 col-sm-6">
+            <div class="img">
+                <img [src]="content.urlImg" alt="">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="sppb-addon">
+                <div class="sppb-addon-content">
+                    <p *ngFor="let item of content.desc">{{item}}</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-12">
+            <div class="dk3">
+                <a class="button" href="#popup1">
+                    <button id="myBtn" class="dkbtn">Đăng ký tư vấn</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

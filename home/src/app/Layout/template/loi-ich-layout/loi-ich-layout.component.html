@@ -1,0 +1,27 @@
+<div class="content loi-ich">
+    <div class="row body-wrapper">
+
+        <div class="col-12">
+            <div class="tvc-content">
+                <div class="title">{{list.title}}</div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6">
+            <div class="sppb-addon-content">
+                <p *ngFor="let item of content.desc">
+                    <strong>{{item.title}}</strong><br />
+                   {{item.desc}}</p>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6">
+            <div class="img" style="display: flex;align-items: center;">
+                <img style="height: auto;"
+                    [src]="content.urlImg" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>

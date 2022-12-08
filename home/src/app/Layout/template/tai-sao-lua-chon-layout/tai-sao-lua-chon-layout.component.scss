@@ -1,0 +1,201 @@
+.content{
+    margin: 0;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+
+    .img{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .sppb-addon-content{
+        p{
+            line-height: 26px;
+            margin-bottom: 34px;
+            margin-right: 20px;
+            text-align: justify;
+            &::before {
+                position: relative;
+                content: "";
+                background: url(https://vietstarmax.vn/templates/vietstarmax/images/tick.png) no-repeat left;
+                display: block;
+                width: 24px;
+                height: 24px;
+                float: left;
+                margin-right: 15px;
+            }
+        }
+    }
+    .dk3{
+        margin-top: 30px;
+        text-align: center;
+        a{
+            .dkbtn{
+                border-color: #b8292f;
+                color: #ffffff;
+                background: #b8292f;
+                border: 2px solid #fff;
+                padding: 2px 20px;
+                display: inline-flex;
+                width: auto;
+                border-radius: 28px;
+                margin-left: 0;
+                position: relative;
+                line-height: 34px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 15px;
+                animation-name: btnDangKyTuVan;
+                animation-duration: 0.5s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    background: url(https://vietstarmax.vn/images/0new/contact-ico.png) left no-repeat;
+                    width: 35px;
+                    height: 36px;
+                    position: relative;
+                    float: left;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.tai-sao{
+    background-color: transparent;
+    .title{
+        .sppb-addon-title{
+            background: linear-gradient(45deg, #b8292f 0%, #ed5f6d 100%);
+            padding: 5px 20px;
+            margin-bottom: 30px;
+            color: #fff;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 33px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .sppb-col{
+        p.loi-ich-title {
+            position: relative;
+            background: none;
+            font-weight: 600;
+            font-size: 19px;
+            margin: 25px 0;
+            padding: 0;
+            color: #000000;
+            &::before {
+                position: relative;
+                content: "" !important;
+                background: url(https://vietstarmax.vn/templates/vietstarmax/images/check.png) no-repeat left;
+                display: block;
+                width: 20px;
+                height: 20px;
+                float: left;
+                margin-top: 5px;
+                margin-left: 0;
+                margin-right: 20px;
+                color: #666;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: #000000;
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f105";
+                float: left;
+                margin-left: 0px;
+                display: block;
+                margin-right: 20px;
+                color: #666;
+            }
+        }
+    }
+
+
+}
+
+
+.luu-y{
+    .sppb-addon{
+        background: #f5f5f5;
+        padding: 30px 20px;
+        .sppb-addon-title{
+            margin-bottom: 30px;
+            font-size: 28px;
+            line-height: 33px;
+            font-weight: 500;
+            &::before {
+                content: "";
+                width: 43px;
+                height: 33px;
+                display: block;
+                background: url(https://vietstarmax.vn/templates/vietstarmax/images/bell.png) no-repeat left;
+                float: left;
+                margin-right: 10px;
+                position: relative;
+                background-size: 43px;
+                animation-name: example;
+                animation-duration: 0.5s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+        }
+        .sppb-addon-content-luu-y{
+            p.info{
+                margin-bottom: 34px;
+                font-size: 18px;
+                color: #000000;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid #b8292f;
+                    border-radius: 50%;
+                    float: left;
+                    margin-right: 10px;
+                    margin-top: 7px;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.lien-he{
+    margin-top: 30px;
+    p{
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    a.lien-he-ngay{
+        color: #b8292f;
+    }
+}
+
+
+@media only screen and (max-width: 787px) {
+    .luu-y{
+        margin-bottom: 15px;
+    }
+}
