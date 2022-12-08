@@ -3,7 +3,7 @@
     <div class="row">
       <div id="sp-logo" class="col-lg-2 ">
         <div class="logo">
-          <a href="">
+          <a routerLink="/index" href="">
             <img class="logo-image" src="https://vietstarmax.vn/images/0new/vietstarmax.png" alt="VietstarMax">
           </a>
         </div>
@@ -13,7 +13,7 @@
           <ul class="sp-menu-ul">
             <li *ngFor="let menu of listMenu" class="sp-menu-li">
               <div class="sp-menu-li-wrap">
-                <a class="sp-menu-li-text" href="">{{menu.name}}</a>
+                <a routerLink="{{menu.path !== '' ? menu.path : null}}" class="sp-menu-li-text" href="">{{menu.name}}</a>
                 <i *ngIf="menu.valueLv1.length>0"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                     class="bi bi-chevron-down" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -25,7 +25,7 @@
                 <ul class="sp-dropdown-ul">
                   <li *ngFor="let menuLv2 of menu.valueLv1" class="sp-dropdown-li">
                     <div class="sp-dropdown-li-wrap">
-                      <a class="sp-dropdown-li-text" href="">{{menuLv2.name}}</a>
+                      <a routerLink="{{menuLv2.path !== '' ? menuLv2.path : null}}" class="sp-dropdown-li-text" href="">{{menuLv2.name}}</a>
                       <i *ngIf="menuLv2.valueLv2.length>0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                           class="bi bi-chevron-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd"
@@ -36,7 +36,7 @@
                       <ul class="sp-dropdown-ul">
                         <li *ngFor="let menuLv3 of menuLv2.valueLv2" class="sp-dropdown-li">
                           <div class="sp-dropdown-li-wrap">
-                            <a class="sp-dropdown-li-text" href=""> {{menuLv3}}</a>
+                            <a routerLink="{{menuLv3.path !== '' ? menuLv3.path : null}}" class="sp-dropdown-li-text" href=""> {{menuLv3.value}}</a>
                           </div>
                         </li>
                       </ul>

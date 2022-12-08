@@ -8,10 +8,10 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 export class KhachHangNoiVeChungToiComponent {
 
 
-  @Input() list: any[] = [
-    { link: '#a', text: 'Dịch vụ' },
-    { link: '#b', text: 'Dịch vụ TVC' },
-  ];
+  // @Input() list: any[] = [
+  //   { link: '#a', text: 'Dịch vụ' },
+  //   { link: '#b', text: 'Dịch vụ TVC' },
+  // ];
 
   lenghtList: number = 0;
 
@@ -20,7 +20,7 @@ export class KhachHangNoiVeChungToiComponent {
   constructor(private elRef: ElementRef) {}
 
   ngOnInit(): void {
-    this.lenghtList = this.list.length - 1;
+    // this.lenghtList = this.list.length - 1;
     const items = this.elRef.nativeElement.querySelector('.items');
     const item = this.elRef.nativeElement.querySelector('.item');
     const itemAll = this.elRef.nativeElement.querySelectorAll('.item');

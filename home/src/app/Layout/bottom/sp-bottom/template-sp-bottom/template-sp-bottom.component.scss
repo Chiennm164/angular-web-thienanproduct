@@ -1,0 +1,44 @@
+.title {
+  font-weight: 700;
+  margin: 0 0 30px;
+  padding-top: 20px;
+
+}
+ .des {
+  display: flex;
+  flex-direction: column;
+   .des-item {
+    margin-bottom: 8px;
+    cursor: pointer;
+    &:hover{
+      color:  #fff;
+    }
+    .des-item-wrap{
+      display: flex;
+
+      img{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        margin-bottom: 8px;
+
+      }
+      .text1{
+        align-items: center;
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 14px !important;
+      }
+      // .text2{
+
+      // }
+
+    }
+  }
+}
+.outstanding{
+  font-weight: 700;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 18px;
+}

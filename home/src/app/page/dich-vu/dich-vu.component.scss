@@ -30,6 +30,7 @@
                 max-width: 500px;
                 display: flex;
                 justify-content: center;
+
                 button.dkbtn{
                     border-color: #b8292f;
                     background: #b8292f;
@@ -47,7 +48,12 @@
                     font-weight: 700;
                     font-size: 15px;
                     animation: buttonmargin 0.8s ease 0 infinite alternate;
-
+                    animation-name: btnDangKyTuVan;
+                    animation-duration: 0.5s;
+                    animation-timing-function: linear;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
                     &::before{
                         content: "";
                         position: relative;
@@ -158,7 +164,7 @@
                     background: linear-gradient(-45deg,#b8292f,transparent);
                     background: -webkit-linear-gradient(-45deg,#b8292f,transparent);
                     transition: all ease 0.25s;
-                    
+
                     &:hover{
                         padding-left: 0px;
                     }
@@ -304,7 +310,7 @@
                     margin-top: 15px;
                 }
             }
-    
+
             .items{
                 display: flex;
                 align-items: center;
@@ -327,7 +333,7 @@
                             padding: 20px 160px;
                         }
                     }
-    
+
                     .item-img{
                         padding: 20px 71px;
                         background-color: #b8292f;
@@ -358,7 +364,7 @@
                     }
                 }
             }
-    
+
         }
 
         .infomations{
@@ -366,7 +372,7 @@
             background-color:#f5f5f5;
             padding: 50px 0;
             margin-top: 50px;
-    
+
             .img{
                 height: 487px;
                 background-image: url(https://vietstarmax.vn/images/0new/dich-vu-tong-hop.jpg);
@@ -390,15 +396,15 @@
                         background: linear-gradient(-45deg,#b8292f,transparent);
                         background: -webkit-linear-gradient(-45deg,#b8292f,transparent);
                         transition: all ease 0.25s;
-                        
+
                         &:hover{
                             padding-left: 0px;
                         }
                     }
-    
+
                 }
             }
-    
+
             .content-1,.content-2,.content-3{
                 height: 532px;
                 background-color: #FFFFFF;
@@ -426,7 +432,7 @@
                         left: 0;
                     }
                 }
-    
+
                 .sppb-addon-content{
                     .dv-list{
                         list-style: none;
@@ -439,11 +445,11 @@
                                 margin-bottom: 18px;
                                 line-height: 26px;
                                 text-decoration: none;
-    
+
                                 &:hover{
                                     color: #b8292f;
                                 }
-    
+
                                 &:before {
                                     content: "";
                                     display: block;
@@ -459,14 +465,14 @@
                     }
                 }
             }
-    
+
             .content-2{
                 margin-top: 50px;
                 height: 586px;
                 background-image: url(	https://vietstarmax.vn/images/0new/pattern1.jpg);
                 background-size: cover;
             }
-    
+
             .content-3{
                 margin-top: 50px;
                 height: 586px;
@@ -476,4 +482,3 @@
 
     }
 }
-

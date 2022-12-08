@@ -5,8 +5,10 @@
   margin-bottom: 60px;
   .lgkh-wrap {
     display: flex;
+    flex-wrap: wrap;
     .lgkh-item {
       padding: 2px;
+      width: 9.5%;
       .lgkh-item-wrap {
         border: 1px solid #efefef;
         img {

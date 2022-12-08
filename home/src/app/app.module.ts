@@ -15,6 +15,13 @@ import { TemplateDiemKhacBietComponent } from './Layout/bottom/sp-count/diem-kha
 import { TemplateKhachHangComponent } from './Layout/bottom/sp-count/khach-hang-noi-ve-chung-toi/template-khach-hang/template-khach-hang.component';
 import { DichVuComponent } from './page/dich-vu/dich-vu.component';
 import { SanXuatPhimHinhAnhComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-hinh-anh.component';
+import { TemplateSpBottomComponent } from './Layout/bottom/sp-bottom/template-sp-bottom/template-sp-bottom.component';
+import { RouterModule ,Routes} from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { IndexComponent } from './page/index/index/index.component';
+import { SanphamComponent } from './page/sanpham/sanpham/sanpham.component';
+
+const routes: Routes = []
 
 @NgModule({
   declarations: [
@@ -32,9 +39,15 @@ import { SanXuatPhimHinhAnhComponent } from './page/dich-vu/san-xuat-phim-hinh-a
     TemplateKhachHangComponent,
     DichVuComponent,
     SanXuatPhimHinhAnhComponent,
+    TemplateSpBottomComponent,
+    IndexComponent,
+    SanphamComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,108 +4,23 @@
       <div class="sp-bottom-wrap">
         <div class="row">
           <div class="col-sm-3">
-            <div class="sp-bottom-item">
-              <div class="title">
-                VĂN PHÒNG HÀ NỘI
-              </div>
-              <ul class="des">
-                <li class="des-item">Tầng 5 Tòa nhà 25T1, Hoàng Đạo Thúy, Cầu Giấy, Hà Nội</li>
-                <li class="des-item">info@vietstarmax.vn</li>
-                <li class="des-item">024.3555.3296 Fax : 024.3555.3296</li>
-                <li class="des-item outstanding">Hotline: 0982 840 84</li>
-              </ul>
-
-            </div>
-            <div class="sp-bottom-item">
-              <div class="title">
-                VĂN PHÒNG HÀ NỘI
-              </div>
-              <ul class="des">
-                <li class="des-item">Tầng 5 Tòa nhà 25T1, Hoàng Đạo Thúy, Cầu Giấy, Hà Nội</li>
-                <li class="des-item">info@vietstarmax.vn</li>
-                <li class="des-item">024.3555.3296 Fax : 024.3555.3296</li>
-                <li class="des-item">Hotline: 0982 840 84</li>
-              </ul>
-
-            </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="sp-bottom-item">
-              <div class="title">
-                VĂN PHÒNG HÀ NỘI
-              </div>
-              <ul class="des">
-                <li class="des-item">Tầng 5 Tòa nhà 25T1, Hoàng Đạo Thúy, Cầu Giấy, Hà Nội</li>
-                <li class="des-item">info@vietstarmax.vn</li>
-                <li class="des-item">024.3555.3296 Fax : 024.3555.3296</li>
-                <li class="des-item">Hotline: 0982 840 84</li>
-              </ul>
-
-            </div>
-            <div class="sp-bottom-item">
-              <div class="title">
-                VĂN PHÒNG HÀ NỘI
-              </div>
-              <ul class="des">
-                <li class="des-item">Tầng 5 Tòa nhà 25T1, Hoàng Đạo Thúy, Cầu Giấy, Hà Nội</li>
-                <li class="des-item">info@vietstarmax.vn</li>
-                <li class="des-item">024.3555.3296 Fax : 024.3555.3296</li>
-                <li class="des-item">Hotline: 0982 840 84</li>
-              </ul>
-
+            <div *ngFor="let item of listColum1" class="sp-bottom-item">
+              <app-template-sp-bottom [outstanding]="true" [data]="item" [icon]="false" ></app-template-sp-bottom>
             </div>
           </div>
           <div class="col-sm-3">
-            <div class="sp-bottom-item">
-              <div class="title">
-                VĂN PHÒNG HÀ NỘI
-              </div>
-              <ul class="des">
-                <li class="des-item">Tầng 5 Tòa nhà 25T1, Hoàng Đạo Thúy, Cầu Giấy, Hà Nội</li>
-                <li class="des-item">info@vietstarmax.vn</li>
-                <li class="des-item">024.3555.3296 Fax : 024.3555.3296</li>
-                <li class="des-item">Hotline: 0982 840 84</li>
-              </ul>
-
-            </div>
-            <div class="sp-bottom-item">
-              <div class="title">
-                VĂN PHÒNG HÀ NỘI
-              </div>
-              <ul class="des">
-                <li class="des-item">Tầng 5 Tòa nhà 25T1, Hoàng Đạo Thúy, Cầu Giấy, Hà Nội</li>
-                <li class="des-item">info@vietstarmax.vn</li>
-                <li class="des-item">024.3555.3296 Fax : 024.3555.3296</li>
-                <li class="des-item">Hotline: 0982 840 84</li>
-              </ul>
-
+            <div *ngFor="let item of listColum2" class="sp-bottom-item">
+              <app-template-sp-bottom [outstanding]="false" [data]="item" [icon]="false" ></app-template-sp-bottom>
             </div>
           </div>
           <div class="col-sm-3">
-            <div class="sp-bottom-item">
-              <div class="title">
-                VĂN PHÒNG HÀ NỘI
-              </div>
-              <ul class="des">
-                <li class="des-item">Tầng 5 Tòa nhà 25T1, Hoàng Đạo Thúy, Cầu Giấy, Hà Nội</li>
-                <li class="des-item">info@vietstarmax.vn</li>
-                <li class="des-item">024.3555.3296 Fax : 024.3555.3296</li>
-                <li class="des-item">Hotline: 0982 840 84</li>
-              </ul>
-
+            <div *ngFor="let item of listColum3" class="sp-bottom-item">
+              <app-template-sp-bottom [outstanding]="false" [data]="item" [icon]="false" ></app-template-sp-bottom>
             </div>
-            <div class="sp-bottom-item">
-              <div class="title">
-                VĂN PHÒNG HÀ NỘI
-              </div>
-              <ul class="des">
-                <li class="des-item">Tầng 5 Tòa nhà 25T1, Hoàng Đạo Thúy, Cầu Giấy, Hà Nội</li>
-                <li class="des-item">info@vietstarmax.vn</li>
-                <li class="des-item">024.3555.3296 Fax : 024.3555.3296</li>
-                <li class="des-item">Hotline: 0982 840 84</li>
-              </ul>
-
+          </div>
+          <div class="col-sm-3">
+            <div *ngFor="let item of listColum4" class="sp-bottom-item">
+              <app-template-sp-bottom [outstanding]="false" [data]="item" [icon]="true" ></app-template-sp-bottom>
             </div>
           </div>
         </div>
