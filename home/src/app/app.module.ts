@@ -18,8 +18,8 @@ import { SanXuatPhimHinhAnhComponent } from './page/dich-vu/san-xuat-phim-hinh-a
 import { TemplateSpBottomComponent } from './Layout/bottom/sp-bottom/template-sp-bottom/template-sp-bottom.component';
 import { RouterModule ,Routes} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { IndexComponent } from './page/index/index/index.component';
-import { SanphamComponent } from './page/sanpham/sanpham/sanpham.component';
+import { IndexComponent } from './page/index/index.component';
+import { TemplateDichvuComponent } from './page/index/template-dichvu/template-dichvu.component';
 
 const routes: Routes = []
 
@@ -41,7 +41,8 @@ const routes: Routes = []
     SanXuatPhimHinhAnhComponent,
     TemplateSpBottomComponent,
     IndexComponent,
-    SanphamComponent,
+    TemplateDichvuComponent,
+
   ],
   imports: [
     BrowserModule,

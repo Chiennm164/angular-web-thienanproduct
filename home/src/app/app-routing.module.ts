@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { IndexComponent } from './page/index/index/index.component';
+import { IndexComponent } from './page/index/index.component';
 import { DichVuComponent } from './page/dich-vu/dich-vu.component';
-import { SanphamComponent } from './page/sanpham/sanpham/sanpham.component';
 import { SanXuatPhimHinhAnhComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-hinh-anh.component';
 
 const routes: Routes = [
@@ -16,7 +15,7 @@ const routes: Routes = [
       { path: 'sanxuatphimhinhanh', component: SanXuatPhimHinhAnhComponent },
     ],
   },
-  { path: 'sanpham', component: SanphamComponent },
+  // { path: 'sanpham', component: IndexComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
