@@ -52,9 +52,14 @@ a {
   margin-left: auto;
 }
 
-@keyframes example1 {
-  0%   {margin-left: 6px;}
-  100% {margin-left: 0;}
+
+@keyframes btnDangKyTuVan {
+  0% {
+    margin-left: 6px;
+}
+100% {
+    margin-left: 0;
+}
 }
 
 @keyframes example {

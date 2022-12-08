@@ -1,0 +1,15 @@
+<div class="title">
+  {{data.name}}
+</div>
+<ul class="des">
+  <li *ngFor="let item of data.value ; let last = last"
+    [ngClass]="outstanding  && last ?'des-item outstanding' : 'des-item'">
+    <div *ngIf="!icon && (item.length> 0)">
+      <div> {{item}}</div>
+    </div>
+    <div *ngIf=" !(item.length> 0)" class="des-item-wrap">
+      <img *ngIf="icon && item.icon!== '' " src="{{item.icon}}" alt="">
+      <div [ngClass]="item.icon !== '' ? 'text1' : '' "> {{ item.value2}}</div>
+    </div>
+  </li>
+</ul>
