@@ -46,7 +46,12 @@
                     text-transform: uppercase;
                     font-weight: 700;
                     font-size: 15px;
-                    animation: buttonmargin 0.8s ease 0 infinite alternate;
+                    animation-name: example1;
+                    animation-duration: 0.5s;
+                    animation-timing-function: linear;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
 
                     &::before{
                         content: "";

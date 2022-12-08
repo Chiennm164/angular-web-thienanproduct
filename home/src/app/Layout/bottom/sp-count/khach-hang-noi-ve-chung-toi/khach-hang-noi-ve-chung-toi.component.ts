@@ -3,11 +3,9 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 @Component({
   selector: 'app-khach-hang-noi-ve-chung-toi',
   templateUrl: './khach-hang-noi-ve-chung-toi.component.html',
-  styleUrls: ['./khach-hang-noi-ve-chung-toi.component.scss']
+  styleUrls: ['./khach-hang-noi-ve-chung-toi.component.scss'],
 })
 export class KhachHangNoiVeChungToiComponent {
-
-
   @Input() list: any[] = [
     { link: '#a', text: 'Dịch vụ' },
     { link: '#b', text: 'Dịch vụ TVC' },

@@ -1,0 +1,587 @@
+#TVC-QC{
+    margin-top: 90px;
+    overflow: hidden;
+    .tvc-banner{
+        width: 100%;
+        height: 445px;
+        background-image: url(https://vietstarmax.vn/images/2020/07/10/banner-phim-tvc3.webp);
+        background-position: right;
+        background-size: cover;
+        backface-visibility: hidden;
+        padding: 0;
+        z-index: -1;
+        .banner-content{
+            transform: translateY(30%);
+            .banner-title{
+                max-width: 420px;
+                font-size: 36px;
+                line-height: 1.2em;
+                font-weight: 700;
+                margin-bottom: 10px;
+                font-family: "Open Sans", sans-serif;
+            }
+            .banner-desc{
+                color: #444;
+                max-width: 500px;
+                margin-bottom: 20px;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .banner-btn{
+                max-width: 500px;
+                display: flex;
+                justify-content: center;
+                button.dkbtn{
+                    border-color: #b8292f;
+                    background: #b8292f;
+                    outline: none;
+                    color: #ffffff;
+                    border: 2px solid #fff;
+                    padding: 2px 20px;
+                    display: inline-flex;
+                    width: auto;
+                    border-radius: 28px;
+                    margin-left: 0;
+                    position: relative;
+                    line-height: 34px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 15px;
+                    animation: buttonmargin 0.8s ease 0 infinite alternate;
+
+                    &::before{
+                        content: "";
+                        position: relative;
+                        display: block;
+                        background: url(https://vietstarmax.vn/images/0new/contact-ico.png) left no-repeat;
+                        width: 35px;
+                        height: 36px;
+                        float: left;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav{
+
+        ul.sppb-nav{
+            background: linear-gradient(45deg, #b8292f 0%, #ed5f6d 100%);
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li{
+                text-align: center;
+                a{
+                    display: block;
+                    padding: 13px 15px;
+                    font-size: 14px;
+                    color: #fff;
+                    font-weight: 600;
+                    line-height: 1.42857143;
+                    text-transform: uppercase;
+                }
+            }
+            .active{
+                
+                    &::after{
+                        content: "";
+                        width: 11%;
+                        display: block;
+                        margin-top: -8px;
+                        position: absolute;
+                        background: url(https://vietstarmax.vn/templates/vietstarmax/images/tab-active.png) no-repeat right;
+                        height: 2px;
+                    }
+                
+            }
+        }
+    }
+
+    .gioi-thieu{
+        padding: 50px;
+        .tvc-content{
+            padding-top: 60px;
+            background-image: url(https://vietstarmax.vn/images/2020/06/11/play-btn-red.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            .title{
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 38px;
+                color: #000000;
+                text-align: center;
+                margin-bottom: 10px;
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    background: url(https://vietstarmax.vn/images/0new/line.png) no-repeat center;
+                    top: 48px;
+                    width: 10%;
+                    left: 45%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 15px;
+                }
+            }
+        }
+        .desc{
+            color: #000;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    .content{
+        margin: 0;
+        padding: 50px 0;
+        background-color: #f5f5f5;
+
+        .img{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .sppb-addon-content{
+            p{
+                line-height: 26px;
+                margin-bottom: 34px;
+                margin-right: 20px;
+                text-align: justify;
+                &::before {
+                    position: relative;
+                    content: "";
+                    background: url(https://vietstarmax.vn/templates/vietstarmax/images/tick.png) no-repeat left;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    float: left;
+                    margin-right: 15px;
+                }
+            }
+        }
+        .dk3{
+            margin-top: 30px;
+            text-align: center;
+            a{
+                .dkbtn{
+                    border-color: #b8292f;
+                    color: #ffffff;
+                    background: #b8292f;
+                    border: 2px solid #fff;
+                    padding: 2px 20px;
+                    display: inline-flex;
+                    width: auto;
+                    border-radius: 28px;
+                    margin-left: 0;
+                    position: relative;
+                    line-height: 34px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 15px;
+                    animation-name: example1;
+                    animation-duration: 0.5s;
+                    animation-timing-function: linear;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        background: url(https://vietstarmax.vn/images/0new/contact-ico.png) left no-repeat;
+                        width: 35px;
+                        height: 36px;
+                        position: relative;
+                        float: left;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .loi-ich{
+        background-color: transparent;
+    }
+
+    .dich-vu{
+        .tvc-gioi-thieu{
+            .title{
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 38px;
+                color: #000000;
+                text-align: center;
+                margin-bottom: 30px;
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    background: url(https://vietstarmax.vn/images/0new/line.png) no-repeat center;
+                    top: 48px;
+                    width: 10%;
+                    left: 45%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 15px;
+                }
+            }
+        }
+
+
+        .sppb-addon{
+            padding: 13px 20px;
+            border-left: 2px solid #b8292f;
+            p {
+                position: relative;
+                margin-bottom: 1px;
+                font-weight: 600;
+                font-size: 18px;
+                transition: all 0.5s;
+                padding: 10px 0 10px 10px;
+                cursor: pointer;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: -29px;
+                    width: 15px;
+                    height: 15px;
+                    background: #d94a55;
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                    top: 15px;
+                }
+
+                &:hover{
+                    color: #b8292f;
+                    &::before {
+                        width: 20px;
+                        height: 20px;
+                        left: -31px;
+                        background: #b82a30;
+                    }
+                }
+            }
+        }
+    }
+
+    .tai-sao{
+        background-color: transparent;
+        .title{
+            .sppb-addon-title{
+                background: linear-gradient(45deg, #b8292f 0%, #ed5f6d 100%);
+                padding: 5px 20px;
+                margin-bottom: 30px;
+                color: #fff;
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 33px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+
+        .sppb-col{
+            p.loi-ich-title {
+                position: relative;
+                background: none;
+                font-weight: 600;
+                font-size: 19px;
+                margin: 25px 0;
+                padding: 0;
+                color: #000000;
+                &::before {
+                    position: relative;
+                    content: "" !important;
+                    background: url(https://vietstarmax.vn/templates/vietstarmax/images/check.png) no-repeat left;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    float: left;
+                    margin-top: 5px;
+                    margin-left: 0;
+                    margin-right: 20px;
+                    color: #666;
+                }
+            }
+            p{
+                font-size: 18px;
+                color: #000000;
+                &::before {
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    content: "\f105";
+                    float: left;
+                    margin-left: 0px;
+                    display: block;
+                    margin-right: 20px;
+                    color: #666;
+                }
+            }
+        }
+
+
+    }
+
+    .lien-he{
+        margin-top: 30px;
+        p{
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        a.lien-he-ngay{
+            color: #b8292f;
+        }
+    }
+
+    .luu-y{
+        .sppb-addon{
+            background: #f5f5f5;
+            padding: 30px 20px;
+            .sppb-addon-title{
+                margin-bottom: 30px;
+                font-size: 28px;
+                line-height: 33px;
+                font-weight: 500;
+                &::before {
+                    content: "";
+                    width: 43px;
+                    height: 33px;
+                    display: block;
+                    background: url(https://vietstarmax.vn/templates/vietstarmax/images/bell.png) no-repeat left;
+                    float: left;
+                    margin-right: 10px;
+                    position: relative;
+                    background-size: 43px;
+                    animation-name: example;
+                    animation-duration: 0.5s;
+                    animation-timing-function: linear;
+                    animation-delay: 0s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+            }
+            .sppb-addon-content-luu-y{
+                p.info{
+                    margin-bottom: 34px;
+                    font-size: 18px;
+                    color: #000000;
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border: 2px solid #b8292f;
+                        border-radius: 50%;
+                        float: left;
+                        margin-right: 10px;
+                        margin-top: 7px;
+                    }
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .cau-hoi-thuong-gap{
+        padding: 50px 0;
+        .title{
+            font-size: 28px;
+            color: #000000;
+            line-height: 33px;
+            text-align: center;  
+        }
+
+            .questions{
+                .question{
+                    .show{
+                        border-bottom: 1px solid #e5e5e5;
+                        padding: 10px 30px 10px 15px;
+                        display: flex;
+                        justify-content: space-between;
+                        cursor: pointer;
+                        .text{
+                            font-size: 14px;
+                            color: #000000;
+                            font-weight: 700;
+                        }
+                        .icon{
+                            width: 12px;
+                            height: 12px;
+                            transform: rotate(45deg);
+                            
+                            &::before {
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                border-width: 4px 4px 0 0;
+                                border-style: solid;
+                                border-color: #ccc;
+                                transition: .2s ease;
+                                display: block;
+                                transform-origin: 100% 0;
+                            }
+    
+                            &:after {
+                                content: '';
+                                float: left;
+                                position: relative;
+                                top: -100%;
+                                width: 100%;
+                                height: 100%;
+                                border-width: 4px 0 0;
+                                border-style: solid;
+                                border-color: #ccc;
+                                transform-origin: 100% 0;
+                                transition:.2s ease;
+                            }
+                        }
+                        .drop-dow{
+                            transform: rotate(135deg);
+                        }
+    
+                    }
+    
+                    .hidden{
+                        // display: none;
+                        padding: 15px;
+                        font-size: 18px;
+                        color: #000000;
+                        line-height: 27px;
+                    }
+
+                }
+            }
+        
+    }
+
+
+    .article-ratings {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        .article-ratings {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            .ratings-label{
+                font-size: 18px;
+                color: #000000;
+                font-weight: 500;
+                margin-right: 3px;
+            }
+            .rating-symbol {
+                unicode-bidi: bidi-override;
+                direction: rtl;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 5px;
+                transform: translateY(-2px);
+                .hinh_ngoi_sao{
+                    margin-right: 5px;
+                    color: #f6bc00;
+                }
+            }
+            .ratings-count {
+                font-size: 0.785rem;
+                color: #999;
+            }
+        }
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 787px) {
+    #TVC-QC{
+        .tvc-banner{
+            height: 355px;
+            .background{
+                height: 100%;
+                background-color: rgba(184, 41, 47, 0.7);
+            }
+            .banner-content{
+                transform: translateY(30%);
+                color: #FFFFFF;
+                .banner-title{
+                    color: #FFFFFF;
+                    font-size: 24px;
+                }
+                .banner-desc{
+                    font-size: 18px;
+                    color: #FFFFFF;
+
+                }
+                .banner-btn{
+                    justify-content: flex-start;
+                    button.dkbtn{
+                        border: 2px solid #b8292f;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .nav{
+            ul.sppb-nav{
+
+                li{
+                    a{
+                        padding: 10px 5px;
+                        font-size: 14px;
+                    }
+                }
+                .active{
+                    &::after{
+                        content: "";
+                        background-image: none;
+                    }
+                }
+            }
+        }
+        .gioi-thieu{
+            padding: 50px 15px;
+        }
+        .content{
+            .sppb-addon-content{
+                margin-top: 40px;
+            }
+            .dk3{
+                margin: 0;
+            }
+        }
+        .loi-ich{
+            padding-top: 0px;
+        }
+        .dich-vu{
+            .sppb-addon{
+                margin-top: 25px;
+                .sppb-addon-content{
+                    margin-top: 10px;
+                }
+            }
+        }
+
+    }
+}
+
+

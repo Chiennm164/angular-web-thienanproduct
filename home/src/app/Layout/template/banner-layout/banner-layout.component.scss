@@ -1,0 +1,110 @@
+.tvc-banner{
+    width: 100%;
+    height: 445px;
+    background-image: url(https://vietstarmax.vn/images/2020/07/10/banner-phim-tvc3.webp);
+    background-position: right;
+    background-size: cover;
+    backface-visibility: hidden;
+    padding: 0;
+    z-index: -1;
+    .banner-content{
+        transform: translateY(30%);
+        .banner-title{
+            max-width: 420px;
+            font-size: 36px;
+            line-height: 1.2em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: "Open Sans", sans-serif;
+        }
+        .banner-desc{
+            color: #444;
+            max-width: 500px;
+            margin-bottom: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .banner-btn{
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            button.dkbtn{
+                border-color: #b8292f;
+                background: #b8292f;
+                outline: none;
+                color: #ffffff;
+                border: 2px solid #fff;
+                padding: 2px 20px;
+                display: inline-flex;
+                width: auto;
+                border-radius: 28px;
+                margin-left: 0;
+                position: relative;
+                line-height: 34px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 15px;
+                animation: buttonmargin 0.8s ease 0 infinite alternate;
+
+                &::before{
+                    content: "";
+                    position: relative;
+                    display: block;
+                    background: url(https://vietstarmax.vn/images/0new/contact-ico.png) left no-repeat;
+                    width: 35px;
+                    height: 36px;
+                    float: left;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .colorWhite{
+        .banner-title{
+            color: #FFFFFF;
+        }
+        .banner-desc{
+            color: #FFFFFF;
+        }
+        .banner-btn{
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            button.dkbtn{
+                border-color: #FFFFFF;
+                background: transparent;                
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 787px) {
+    .tvc-banner{
+        height: 355px;
+        .background{
+            height: 100%;
+            background-color: rgba(184, 41, 47, 0.7);
+        }
+        .banner-content{
+            transform: translateY(30%);
+            color: #FFFFFF;
+            .banner-title{
+                color: #FFFFFF;
+                font-size: 24px;
+            }
+            .banner-desc{
+                font-size: 18px;
+                color: #FFFFFF;
+
+            }
+            .banner-btn{
+                justify-content: flex-start;
+                button.dkbtn{
+                    border: 2px solid #b8292f;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

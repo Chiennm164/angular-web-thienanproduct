@@ -15,6 +15,16 @@ import { TemplateDiemKhacBietComponent } from './Layout/bottom/sp-count/diem-kha
 import { TemplateKhachHangComponent } from './Layout/bottom/sp-count/khach-hang-noi-ve-chung-toi/template-khach-hang/template-khach-hang.component';
 import { DichVuComponent } from './page/dich-vu/dich-vu.component';
 import { SanXuatPhimHinhAnhComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-hinh-anh.component';
+import { SanXuatTvcQuangCaoComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-tvc-quang-cao/san-xuat-tvc-quang-cao.component';
+
+import { SanPhamThucHienComponent } from './Layout/bottom/sp-count/san-pham-thuc-hien/san-pham-thuc-hien.component';
+import { BannerLayoutComponent } from './Layout/template/banner-layout/banner-layout.component';
+import { GioiThieuLayoutComponent } from './Layout/template/gioi-thieu-layout/gioi-thieu-layout.component';
+import { LoiIchLayoutComponent } from './Layout/template/loi-ich-layout/loi-ich-layout.component';
+import { DichVuBaoHomLayoutComponent } from './Layout/template/dich-vu-bao-hom-layout/dich-vu-bao-hom-layout.component';
+import { TaiSaoLuaChonLayoutComponent } from './Layout/template/tai-sao-lua-chon-layout/tai-sao-lua-chon-layout.component';
+import { SanXuatPhimViralVideoComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-viral-video/san-xuat-phim-viral-video.component';
+import { NavigationComponent } from './Layout/template/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +42,18 @@ import { SanXuatPhimHinhAnhComponent } from './page/dich-vu/san-xuat-phim-hinh-a
     TemplateKhachHangComponent,
     DichVuComponent,
     SanXuatPhimHinhAnhComponent,
+    SanXuatTvcQuangCaoComponent,
+    SanPhamThucHienComponent,
+    BannerLayoutComponent,
+    GioiThieuLayoutComponent,
+    LoiIchLayoutComponent,
+    DichVuBaoHomLayoutComponent,
+    TaiSaoLuaChonLayoutComponent,
+    SanXuatPhimViralVideoComponent,
+    NavigationComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
