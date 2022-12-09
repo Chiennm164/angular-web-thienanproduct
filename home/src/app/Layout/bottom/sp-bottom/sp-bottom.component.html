@@ -3,22 +3,22 @@
     <div class="container">
       <div class="sp-bottom-wrap">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-lg-4 col-sm-12">
             <div *ngFor="let item of listColum1" class="sp-bottom-item">
               <app-template-sp-bottom [outstanding]="true" [data]="item" [icon]="false" ></app-template-sp-bottom>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-lg-4 col-sm-12">
             <div *ngFor="let item of listColum2" class="sp-bottom-item">
               <app-template-sp-bottom [outstanding]="false" [data]="item" [icon]="false" ></app-template-sp-bottom>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-lg-4 col-sm-12">
             <div *ngFor="let item of listColum3" class="sp-bottom-item">
               <app-template-sp-bottom [outstanding]="false" [data]="item" [icon]="false" ></app-template-sp-bottom>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-lg-4 col-sm-12">
             <div *ngFor="let item of listColum4" class="sp-bottom-item">
               <app-template-sp-bottom [outstanding]="false" [data]="item" [icon]="true" ></app-template-sp-bottom>
             </div>

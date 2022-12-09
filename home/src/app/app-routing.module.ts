@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
   { path: 'index', component: IndexComponent },
   {
-    path: 'dichvu',
+    path: 'dichvu/:id',
     component: DichVuComponent,
     children: [
       { path: 'sanxuatphimhinhanh', component: SanXuatPhimHinhAnhComponent },

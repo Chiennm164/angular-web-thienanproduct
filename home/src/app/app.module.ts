@@ -32,6 +32,10 @@ import { DichVuBaoHomLayoutComponent } from './Layout/template/dich-vu-bao-hom-l
 import { TaiSaoLuaChonLayoutComponent } from './Layout/template/tai-sao-lua-chon-layout/tai-sao-lua-chon-layout.component';
 import { SanXuatPhimViralVideoComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-viral-video/san-xuat-phim-viral-video.component';
 import { NavigationComponent } from './Layout/template/navigation/navigation.component';
+import { BannerComponent } from './page/index/banner/banner.component';
+import { DanhSachDichVuComponent } from './page/index/danh-sach-dich-vu/danh-sach-dich-vu.component';
+import { SectionProductComponent } from './page/index/section-product/section-product.component';
+import { SanPhamNoiBatComponent } from './Layout/template/san-pham-noi-bat/san-pham-noi-bat.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +64,11 @@ import { NavigationComponent } from './Layout/template/navigation/navigation.com
     TaiSaoLuaChonLayoutComponent,
     SanXuatPhimViralVideoComponent,
     NavigationComponent,
-    TemplateDichvuComponent
+    TemplateDichvuComponent,
+    BannerComponent,
+    DanhSachDichVuComponent,
+    SectionProductComponent,
+    SanPhamNoiBatComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes), AppRoutingModule],
   providers: [],

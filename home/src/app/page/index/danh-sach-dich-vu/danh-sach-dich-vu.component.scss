@@ -1,0 +1,10 @@
+
+#listDichVu {
+     .listDichVu-wrap {
+       display: flex;
+       flex-wrap: wrap;
+       .dichVu-item {
+         width: 33.333333333%;
+       }
+     }
+   }
