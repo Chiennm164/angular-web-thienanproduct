@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
             { path: '', value: 'THU ÂM QUẢNG CÁO - RADIO VOICE' },
             { path: '', value: 'SẢN XUẤT CHƯƠNG TRÌNH TRUYỀN HÌNH' },
           ],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: ' BOOKING QUẢNG CÁO',
@@ -42,7 +42,7 @@ export class HeaderComponent implements OnInit {
             { path: '', value: 'BOOKING QUẢNG CÁO OOH - QUẢNG CÁO NGOÀI TRỜI' },
             { path: '', value: 'DỊCH VỤ TỔ CHỨC SỰ KIỆN' },
           ],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'TRUYỀN THÔNG ONLINE ',
@@ -59,10 +59,10 @@ export class HeaderComponent implements OnInit {
             { path: ' ', value: 'QUẢNG CÁO TIKTOK' },
             { path: ' ', value: 'SEEDING, CHATBOT, TOOL' },
           ],
-          path: '/dichvu',
+          path: '',
         },
       ],
-      path: '/dichvu',
+      path: '',
     },
     {
       name: 'Sản Phẩm ',
@@ -70,42 +70,42 @@ export class HeaderComponent implements OnInit {
         {
           name: 'SẢN PHẨM PHIM QUẢNG CÁO',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'SẢN PHẨM PHIM VIRAL',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'SẢN PHẨM PHIM DOANH NGHIỆP',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'SẢN PHẨM PHIM 3D',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'SẢN PHẨM ẢNH QUẢNG CÁO',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'CHIẾN DỊCH TRUYỀN THÔNG',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'CHƯƠNG TRÌNH TRUYỀN HÌNH',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'VOICE RADIO',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'HẬU TRƯỜNG',
@@ -113,7 +113,7 @@ export class HeaderComponent implements OnInit {
             { path: '', value: 'HẬU TRƯỜNG TVC' },
             { path: '', value: 'HẬU TRƯỜNG PHIM DOANH NGHIỆP' },
           ],
-          path: '/dichvu',
+          path: '',
         },
       ],
       path: '/sanpham',
@@ -124,22 +124,22 @@ export class HeaderComponent implements OnInit {
         {
           name: 'BÁO GIÁ PHIM DOANH NGHIỆP',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'BÁO GIÁ PHIM TVC',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'BÁO GIÁ VIRAL VIDEO',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'BÁO GIÁ PHIM QUẢNG CÁO 3D ANIMATION',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
       ],
       path: '',
@@ -150,17 +150,17 @@ export class HeaderComponent implements OnInit {
         {
           name: 'GIỚI THIỆU',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: '12 LÝ DO CHỌN VSM',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'TUYỂN DỤNG',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'BẢN TIN VSM',
@@ -169,27 +169,27 @@ export class HeaderComponent implements OnInit {
             { path: '', value: 'HỎI ĐÁP VỀ VSM' },
             { path: '', value: 'SINH NHẬT THÀNH VIÊN' },
           ],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'ĐỘI NGŨ NHÂN SỰ',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'VIDEO NỘI BỘ',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'HỒ SƠ NĂNG LỰC',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'KHÁCH HÀNG - ĐỐI TÁC',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
       ],
       path: '',
@@ -205,7 +205,7 @@ export class HeaderComponent implements OnInit {
             { path: ' ', value: 'MV QUẢNG CÁO' },
             { path: ' ', value: 'PHIM DOANH NGHIỆP' },
           ],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'TRUYỀN THÔNG',
@@ -215,7 +215,7 @@ export class HeaderComponent implements OnInit {
             { path: '', value: 'TỔ CHỨC SỰ KIỆN' },
             { path: '', value: 'BOOKING KOL' },
           ],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'QUẢNG CÁO',
@@ -226,12 +226,12 @@ export class HeaderComponent implements OnInit {
             { path: ' ', value: 'QUẢNG CÁO XE BUÝT TAXI' },
             { path: ' ', value: 'QUẢNG CÁO BẢNG BIỂN' },
           ],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'DIGITAL MARKETINGv',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'VĂN HOÁ DOANH NGHIỆP',
@@ -240,7 +240,7 @@ export class HeaderComponent implements OnInit {
             { path: ' ', value: 'THƯƠNG HIỆU TUYỂN DỤNG' },
             { path: ' ', value: 'VĂN HÓA - GIẢI TRÍ' },
           ],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'CỘNG ĐỒNG',
@@ -251,12 +251,12 @@ export class HeaderComponent implements OnInit {
             { path: '', value: 'THỊ TRƯỜNG' },
             { path: '', value: 'CHIẾN DỊCH THÀNH CÔNG' },
           ],
-          path: '/dichvu',
+          path: '',
         },
         {
           name: 'BẢN TIN DỊCH VỤ',
           valueLv2: [],
-          path: '/dichvu',
+          path: '',
         },
       ],
       path: '',
@@ -275,5 +275,9 @@ export class HeaderComponent implements OnInit {
   }
   showMenu(){
     this.checkBtnMenu = !this.checkBtnMenu
+  }
+  menuLv1(data : any){
+    console.log(data);
+
   }
 }
