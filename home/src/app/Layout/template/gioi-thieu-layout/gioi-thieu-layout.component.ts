@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class GioiThieuLayoutComponent {
   @Input() list: any;
+  @Input() textbtn: any;
 
   header: any;
   content: any;

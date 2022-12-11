@@ -1,11 +1,11 @@
 <div class="content tai-sao">
     <div class="row body-wrapper">
-        <div class="col-12 title">
+        <div class="col-12 title" *ngIf="header">
             <h3 class="sppb-addon-title">{{header.title}}</h3>
             <p>{{header.desc}}</p>
         </div>
 
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6" *ngIf="contentLeft">
             <div class="sppb-col">
                 <span *ngFor="let item of contentLeft">
                     <p class="loi-ich-title">{{item.title}}</p>
@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6" *ngIf="contentRight">
             <div class="sppb-col">
                 <span *ngFor="let item of contentRight">
                     <p class="loi-ich-title">{{item.title}}</p>
@@ -25,13 +25,13 @@
 
 
 
-        <div class="col-12 lien-he">
+        <div class="col-12 lien-he" *ngIf="lienHe">
             <p *ngFor="let item of lienHe">
                 {{item.text}} <a class="lien-he-ngay" [href]="'tel:+'+item.phone">{{item.textLink}}</a></p>
         </div>
 
 
-        <div class="col-12 luu-y">
+        <div class="col-12 luu-y" *ngIf="luuY">
             <div class="sppb-addon">
                 <h3 class="sppb-addon-title">{{luuY.title}}</h3>
                 <div class="sppb-addon-content-luu-y">
@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div class="col-12">
+        <div class="col-12" *ngIf="luuY">
             <div class="dk3">
                 <a class="button" href="#popup1">
                     <button id="myBtn" class="dkbtn">Đăng ký tư vấn</button>

@@ -1,0 +1,38 @@
+.article-ratings {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    .article-ratings {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        .ratings-label{
+            font-size: 18px;
+            color: #000000;
+            font-weight: 500;
+            margin-right: 3px;
+        }
+        .rating-symbol {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 5px;
+            transform: translateY(-2px);
+            .hinh_ngoi_sao{
+                margin-right: 5px;
+                color: #a6a2a2;
+            }
+        }
+        .ratings-count {
+            font-size: 0.785rem;
+            color: #999;
+        }
+    }
+}

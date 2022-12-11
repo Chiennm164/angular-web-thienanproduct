@@ -32,6 +32,13 @@ import { DichVuBaoHomLayoutComponent } from './Layout/template/dich-vu-bao-hom-l
 import { TaiSaoLuaChonLayoutComponent } from './Layout/template/tai-sao-lua-chon-layout/tai-sao-lua-chon-layout.component';
 import { SanXuatPhimViralVideoComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-viral-video/san-xuat-phim-viral-video.component';
 import { NavigationComponent } from './Layout/template/navigation/navigation.component';
+import { SanXuatPhimDoanhNghiepComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-doanh-nghiep/san-xuat-phim-doanh-nghiep.component';
+import { SanXuatPhimQcAnimationComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-qc-animation/san-xuat-phim-qc-animation.component';
+import { PhimDuAnBatDongSanComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/phim-du-an-bat-dong-san/phim-du-an-bat-dong-san.component';
+import { LoiichDvComponent } from './Layout/template/loiich-dv/loiich-dv.component';
+import { ChupAnhQuangCaoComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/chup-anh-quang-cao/chup-anh-quang-cao.component';
+import { ThietKeQcComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/thiet-ke-qc/thiet-ke-qc.component';
+import { ThuAmQcComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/thu-am-qc/thu-am-qc.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +68,13 @@ import { NavigationComponent } from './Layout/template/navigation/navigation.com
     TaiSaoLuaChonLayoutComponent,
     SanXuatPhimViralVideoComponent,
     NavigationComponent,
+    SanXuatPhimDoanhNghiepComponent,
+    SanXuatPhimQcAnimationComponent,
+    PhimDuAnBatDongSanComponent,
+    LoiichDvComponent,
+    ChupAnhQuangCaoComponent,
+    ThietKeQcComponent,
+    ThuAmQcComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes), AppRoutingModule],
   providers: [],

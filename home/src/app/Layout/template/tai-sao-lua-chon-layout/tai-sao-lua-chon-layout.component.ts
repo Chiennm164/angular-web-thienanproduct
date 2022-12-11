@@ -78,9 +78,14 @@ export class TaiSaoLuaChonLayoutComponent {
   // };
 
   ngOnInit(): void {
-    this.header = this.list.header;
-    this.contentLeft = this.list.content.left;
-    this.contentRight = this.list.content.right;
+    if (this.list.header) {
+      this.header = this.list.header;
+    }
+
+    if (this.list.content) {
+      this.contentLeft = this.list.content.left;
+      this.contentRight = this.list.content.right;
+    }
     this.lienHe = this.list.lienhe;
     this.luuY = this.list.luuY;
   }

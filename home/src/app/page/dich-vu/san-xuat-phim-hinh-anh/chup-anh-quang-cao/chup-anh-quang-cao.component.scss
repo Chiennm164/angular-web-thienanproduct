@@ -1,0 +1,126 @@
+.chup-anh-qc-la-gi{
+    padding: 50px 0;
+    .desc{
+        h3{
+            font-size: 28px;
+            color: #000000;
+            padding-bottom: 10px;
+        }
+        p{
+            font-size: 18px;
+            color: #000000;
+        }
+    }
+
+    .img{
+        height: 359px;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+.hinh-thuc-chup-anh-qc{
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    .title{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 30px;
+        &::after{
+            content: "";
+            display: block;
+            height: 2px;
+            background: url(https://vietstarmax.vn/images/0new/line.png) no-repeat center;
+            top: 48px;
+            width: 10%;
+            left: 45%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+        }
+    }
+
+    .img{
+        height: 396px;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .desc{
+        ul{
+            margin-bottom: 40px;
+            padding-left: 40px;
+            li{
+                list-style: unset;
+            }
+        }
+        .text-left{
+            li{
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.vai-tro-chup-anh-qc{
+    padding: 50px 0;
+    .title{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 30px;
+        &::after{
+            content: "";
+            display: block;
+            height: 2px;
+            background: url(https://vietstarmax.vn/images/0new/line.png) no-repeat center;
+            top: 48px;
+            width: 10%;
+            left: 45%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+        }
+    }
+    .desc{
+        padding: 0 15px;
+    }
+    .right{
+        p{
+            &::before {
+                position: relative;
+                content: "";
+                background: url(https://vietstarmax.vn/templates/vietstarmax/images/check2.png) no-repeat left;
+                display: block;
+                width: 20px;
+                height: 20px;
+                float: left;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 787px) {
+    .chup-anh-qc-la-gi,.hinh-thuc-chup-anh-qc{
+        .desc{
+            padding: 0 15px;
+        }
+        .right{
+            margin-top: 20px;
+        }
+    }
+}

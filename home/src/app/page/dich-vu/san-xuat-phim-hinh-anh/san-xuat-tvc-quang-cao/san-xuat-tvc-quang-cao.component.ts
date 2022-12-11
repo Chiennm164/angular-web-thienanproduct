@@ -80,7 +80,7 @@ export class SanXuatTvcQuangCaoComponent {
     {
       id: 2,
       text: 'TVC quảng cáo tiêu chuẩn',
-      active: true,
+      active: false,
       list: [
         {
           urlImg: 'https://vietstarmax.vn/images/Beauty_Sm.png',
@@ -212,7 +212,9 @@ export class SanXuatTvcQuangCaoComponent {
       header: {
         iconUrl: 'https://vietstarmax.vn/images/2020/06/11/play-btn-red.png',
         title: 'Giới thiệu và lợi ích của phim quảng cáo TVC',
-        desc: 'Ngày nay cụm từ TVC quảng cáo đã không còn xa lạ với các doanh nghiệp Việt Nam. Chỉ trong một khối lượng thời gian ngắn tính bằng giây, sản xuất TVC quảng cáo ấn tượng – độc đáo – nhắm trúng đích hoàn toàn có thể mang lại cho doanh nghiệp của bạn những lợi nhuận khổng lồ. Tuy nhiên, nếu sản xuất TVC quảng cáo thiếu chuyên nghiệp, kịch bản đầu tư ít chất xám và không thể hiện được đặc trưng doanh nghiệp chắc chắn sẽ là một lỗ hổng và sự lãng phí lớn làm giảm hiệu quả của cả chiến dịch marketing mà bạn đang thực hiện.',
+        desc: [
+          'Ngày nay cụm từ TVC quảng cáo đã không còn xa lạ với các doanh nghiệp Việt Nam. Chỉ trong một khối lượng thời gian ngắn tính bằng giây, sản xuất TVC quảng cáo ấn tượng – độc đáo – nhắm trúng đích hoàn toàn có thể mang lại cho doanh nghiệp của bạn những lợi nhuận khổng lồ. Tuy nhiên, nếu sản xuất TVC quảng cáo thiếu chuyên nghiệp, kịch bản đầu tư ít chất xám và không thể hiện được đặc trưng doanh nghiệp chắc chắn sẽ là một lỗ hổng và sự lãng phí lớn làm giảm hiệu quả của cả chiến dịch marketing mà bạn đang thực hiện.',
+        ],
       },
       content: {
         urlContent:

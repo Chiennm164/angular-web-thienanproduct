@@ -38,7 +38,9 @@ export class SanXuatPhimViralVideoComponent {
       header: {
         iconUrl: 'https://vietstarmax.vn/images/2020/06/15/viral-video-ico.png',
         title: 'Giới thiệu và lợi ích của viral video',
-        desc: 'Dịch vụ làm phim viral video chuyên nghiệp hiện đang được rất nhiều doanh nghiệp quan tâm với mong muốn tạo ra được một cú hit cho việc đẩy nhanh việc quảng bá hình ảnh, nhãn hiệu của sản phẩm thương mại tới một số lượng lớn người tiêu dùng tiềm năng. Một đoạn phim viral video sáng tạo đi kèm với một kế hoạch truyền thông được tính toán kỹ lưỡng sẽ giúp doanh nghiệp có được đột phá trong doanh thu bán hàng và marketing hình ảnh.',
+        desc: [
+          'Dịch vụ làm phim viral video chuyên nghiệp hiện đang được rất nhiều doanh nghiệp quan tâm với mong muốn tạo ra được một cú hit cho việc đẩy nhanh việc quảng bá hình ảnh, nhãn hiệu của sản phẩm thương mại tới một số lượng lớn người tiêu dùng tiềm năng. Một đoạn phim viral video sáng tạo đi kèm với một kế hoạch truyền thông được tính toán kỹ lưỡng sẽ giúp doanh nghiệp có được đột phá trong doanh thu bán hàng và marketing hình ảnh.',
+        ],
       },
       content: {
         urlContent: 'https://vietstarmax.vn/images/2020/06/30/viral-gt.jpg',

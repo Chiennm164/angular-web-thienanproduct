@@ -1,0 +1,53 @@
+<div class="content loiich-dv">
+    <div class="row body-wrapper">
+
+        <div class="col-12 col-sm-6">
+            <div class="sppb-addon-overlay-image-content title-subtitle-bottom-left">
+                <div class="overlay-image-title">
+                    <h3 class="sppb-addon-title">{{left.title}}</h3>
+                </div>
+                <div class="overlay-background-image-wrapper">
+                    <div class="overlay-background-image"
+                    [ngStyle]="{'background-image': 'url(' + left.urlImg + ')'}" >
+                    </div>
+                </div>
+                <div class="overlay-background-style"></div>
+            </div>
+
+            <div class="content">
+                <div class="infomation" *ngFor="let item of left.content">
+                    <div class="title">
+                        <p class="loi-ich-title">{{item.title}}</p>
+                    </div>
+                    <div class="desc">
+                        <p *ngFor="let itemList of item.desc">{{itemList}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6">
+            <div class="sppb-addon-overlay-image-content right">
+                <div class="overlay-image-title">
+                    <h3 class="sppb-addon-title">{{right.title}}</h3>
+                </div>
+                <div class="overlay-background-image-wrapper">
+                    <div class="overlay-background-image"
+                    [ngStyle]="{'background-image': 'url(' + right.urlImg + ')'}" >
+                    </div>
+                </div>
+                <div class="overlay-background-style"></div>
+            </div>
+
+            <div class="content">
+                <div class="sppb-addon">
+                    <div class="sppb-addon-content">
+                        <p *ngFor="let item of right.content">{{item}}</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

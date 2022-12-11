@@ -1,32 +1,45 @@
-<div class="gioi-thieu body-wrapper">
+<div class="gioi-thieu body-wrapper" *ngIf="header">
     <div class="tvc-content" [ngStyle]="{'background-image': 'url(' + header.iconUrl + ')'}">
         <div class="title">{{header.title}}</div>
     </div>
-    <div class="desc">{{header.desc}}
+    <div class="desc">
+        <p *ngFor="let item of header.desc">{{item}}</p>
     </div>
 </div>
 
-<div class="content">
+<div class="content" *ngIf="content">
     <div class="row body-wrapper">
         <div class="col-12 col-sm-6">
             <div class="img">
                 <img [src]="content.urlContent" alt="">
             </div>
         </div>
+
         <div class="col-12 col-sm-6">
             <div class="sppb-addon-content">
-                <p *ngFor="let item of content.desc">
+                <h3 *ngIf="content.title">{{content.title}}</h3>
+
+                <div *ngFor="let item of content.desc">
                     <strong>{{item.title}}</strong>
                     {{item.desc}}
-                    </p>
+                    <ul *ngIf="item.list" style="padding: 30px 0px 20px 30px;">
+                        <li *ngFor="let itemList of item.list" style="list-style: unset;">
+                            {{itemList}}
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </div>
 
         <div class="col-12">
             <div class="dk3">
-                <a class="button" href="#popup1">
+                <a class="button" href="#popup1" *ngIf="!textbtn">
                     <button id="myBtn" class="dkbtn">Đăng ký tư vấn</button>
+                </a>
+
+                <a class="button" href="tel:0988343943" *ngIf="textbtn">
+                    <button id="myBtn" class="dkbtn">{{textbtn}}</button>
                 </a>
             </div>
         </div>
