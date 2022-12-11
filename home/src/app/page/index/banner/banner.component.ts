@@ -36,7 +36,7 @@ export class BannerComponent {
       if (-this.marginLeft > (this.lenghtList * itemAll.length) -200 ) {
         this.marginLeft = 0;
       }
-    }, 3000);
+    }, 1000);
   }
 
   dataBG: any = [
