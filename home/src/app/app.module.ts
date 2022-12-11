@@ -18,8 +18,8 @@ import { SanXuatPhimHinhAnhComponent } from './page/dich-vu/san-xuat-phim-hinh-a
 import { TemplateSpBottomComponent } from './Layout/bottom/sp-bottom/template-sp-bottom/template-sp-bottom.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { IndexComponent } from './page/index/index/index.component';
-import { SanphamComponent } from './page/sanpham/sanpham/sanpham.component';
+import { IndexComponent } from './page/index/index.component';
+import { TemplateDichvuComponent } from './page/index/template-dichvu/template-dichvu.component';
 
 const routes: Routes = [];
 import { SanXuatTvcQuangCaoComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-tvc-quang-cao/san-xuat-tvc-quang-cao.component';
@@ -32,6 +32,10 @@ import { DichVuBaoHomLayoutComponent } from './Layout/template/dich-vu-bao-hom-l
 import { TaiSaoLuaChonLayoutComponent } from './Layout/template/tai-sao-lua-chon-layout/tai-sao-lua-chon-layout.component';
 import { SanXuatPhimViralVideoComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-viral-video/san-xuat-phim-viral-video.component';
 import { NavigationComponent } from './Layout/template/navigation/navigation.component';
+import { BannerComponent } from './page/index/banner/banner.component';
+import { DanhSachDichVuComponent } from './page/index/danh-sach-dich-vu/danh-sach-dich-vu.component';
+import { SectionProductComponent } from './page/index/section-product/section-product.component';
+import { SanPhamNoiBatComponent } from './Layout/template/san-pham-noi-bat/san-pham-noi-bat.component';
 import { SanXuatPhimDoanhNghiepComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-doanh-nghiep/san-xuat-phim-doanh-nghiep.component';
 import { SanXuatPhimQcAnimationComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/san-xuat-phim-qc-animation/san-xuat-phim-qc-animation.component';
 import { PhimDuAnBatDongSanComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/phim-du-an-bat-dong-san/phim-du-an-bat-dong-san.component';
@@ -58,7 +62,6 @@ import { ThuAmQcComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/thu-am-q
     SanXuatPhimHinhAnhComponent,
     TemplateSpBottomComponent,
     IndexComponent,
-    SanphamComponent,
     SanXuatTvcQuangCaoComponent,
     SanPhamThucHienComponent,
     BannerLayoutComponent,
@@ -68,6 +71,11 @@ import { ThuAmQcComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/thu-am-q
     TaiSaoLuaChonLayoutComponent,
     SanXuatPhimViralVideoComponent,
     NavigationComponent,
+    TemplateDichvuComponent,
+    BannerComponent,
+    DanhSachDichVuComponent,
+    SectionProductComponent,
+    SanPhamNoiBatComponent
     SanXuatPhimDoanhNghiepComponent,
     SanXuatPhimQcAnimationComponent,
     PhimDuAnBatDongSanComponent,

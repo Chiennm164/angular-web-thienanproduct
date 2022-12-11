@@ -12,9 +12,7 @@ export class KhachHangNoiVeChungToiComponent {
   ];
 
   lenghtList: number = 0;
-
   marginLeft: number = 0;
-
   constructor(private elRef: ElementRef) {}
 
   ngOnInit(): void {

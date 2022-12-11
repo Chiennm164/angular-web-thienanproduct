@@ -16,6 +16,8 @@
   }
   .addons {
     display: flex;
+    flex-wrap: wrap;
+
     .addons-item {
       display: flex;
       flex-direction: column;
@@ -64,6 +66,19 @@
       font-weight: 700;
       color: #b8292f;
       line-height: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 1190px) {
+  #diemkhacbiet {
+    .img2000 {
+      .image2000 {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .addons {
+      flex-direction: column;
     }
   }
 }

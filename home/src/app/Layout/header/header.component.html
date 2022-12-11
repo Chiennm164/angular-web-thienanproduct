@@ -1,72 +1,101 @@
-<div id="sp-header">
+<!-- <div id="sp-header" class="overlay"> -->
+<div id="sp-header" class="">
   <div class="container">
     <div class="row">
-      <div id="sp-logo" class="col-lg-2 ">
-        <div class="logo">
-          <a routerLink="/index" href="">
-            <img class="logo-image" src="https://vietstarmax.vn/images/0new/vietstarmax.png" alt="VietstarMax">
-          </a>
+      <div class="sp-header-wrap">
+        <div id="sp-logo" class="col-lg-2 ">
+          <div class="logo">
+            <a routerLink="/index" href="">
+              <img class="logo-image" src="https://vietstarmax.vn/images/0new/vietstarmax.png" alt="VietstarMax">
+            </a>
+          </div>
         </div>
-      </div>
-      <div id="sp-menu" class="col-lg-8 ">
-        <nav class="sp-menu-nav" role="navigation">
-          <ul class="sp-menu-ul">
-            <li *ngFor="let menu of listMenu" class="sp-menu-li">
-              <div class="sp-menu-li-wrap">
-                <a routerLink="{{menu.path !== '' ? menu.path : null}}" class="sp-menu-li-text" href="">{{menu.name}}</a>
-                <i *ngIf="menu.valueLv1.length>0"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                  </svg>
-                </i>
-              </div>
-              <div class="sp-dropdown">
-                <ul class="sp-dropdown-ul">
-                  <li *ngFor="let menuLv2 of menu.valueLv1" class="sp-dropdown-li">
-                    <div class="sp-dropdown-li-wrap">
-                      <a routerLink="{{menuLv2.path !== '' ? menuLv2.path : null}}" class="sp-dropdown-li-text" href="">{{menuLv2.name}}</a>
-                      <i *ngIf="menuLv2.valueLv2.length>0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                          class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                        </svg></i>
-                    </div>
-                    <div class="sp-dropdown sp-dropdown-lv2">
-                      <ul class="sp-dropdown-ul">
-                        <li *ngFor="let menuLv3 of menuLv2.valueLv2" class="sp-dropdown-li">
-                          <div class="sp-dropdown-li-wrap">
-                            <a routerLink="{{menuLv3.path !== '' ? menuLv3.path : null}}" class="sp-dropdown-li-text" href=""> {{menuLv3.value}}</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
+        <div *ngIf="checkBtnMenu" id="sp-menu" class="col-lg-9 ">
+          <nav class="sp-menu-nav" role="navigation">
+            <i class="btn-close-menu" *ngIf="checkBtnMenu" (click)="showMenu()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+</svg></i>
+            <ul class="sp-menu-ul">
+              <li class="sp-menu-li sp-menu-li-trangchu">
+                <div class="sp-menu-li-wrap">
+                  <a routerLink="/index" class="sp-menu-li-text" href="">Trang chủ</a>
+                </div>
+              </li>
+              <li *ngFor="let menu of listMenu" class="sp-menu-li">
+                <div class="sp-menu-li-wrap">
+                  <a routerLink="{{menu.path !== '' ? menu.path : null}}" class="sp-menu-li-text"
+                    href="">{{menu.name}}</a>
+                  <i class="sp-menu-li-span" *ngIf="menu.valueLv1.length>0"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </i>
+                </div>
+                <div class="sp-dropdown">
+                  <ul class="sp-dropdown-ul">
+                    <li *ngFor="let menuLv2 of menu.valueLv1" class="sp-dropdown-li">
+                      <div class="sp-dropdown-li-wrap">
+                        <a routerLink="{{menuLv2.path !== '' ? menuLv2.path : null}}" class="sp-dropdown-li-text"
+                          href="">{{menuLv2.name}}</a>
+                        <i *ngIf="menuLv2.valueLv2.length>0"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                          </svg></i>
+                      </div>
+                      <div class="sp-dropdown sp-dropdown-lv2">
+                        <ul class="sp-dropdown-ul">
+                          <li *ngFor="let menuLv3 of menuLv2.valueLv2" class="sp-dropdown-li">
+                            <div class="sp-dropdown-li-wrap">
+                              <a routerLink="{{menuLv3.path !== '' ? menuLv3.path : null}}" class="sp-dropdown-li-text"
+                                href=""> {{menuLv3.value}}</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-          </ul>
-        </nav>
-      </div>
-      <div id="sp-search" class="col-lg-2 ">
-        <div class="sp-search-wrap">
-          <div class="search">
-            <div class="wrap-input-search">
-              <input  [class]="showInputSearch? 'input-search tran' :'input-search '" type="text" placeholder="Từ khoá">
-            </div>
-            <i (click)="showInput()"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                class="bi bi-search" viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg></i>
-          </div>
-          <div class="lang">
-            <div class="lang-vn "><a class="active-lang" href="">VI</a></div>
-            <div class="lang-en"><a href="">EN</a></div>
-          </div>
+            </ul>
+          </nav>
         </div>
+        <div id="sp-search" class="col-lg-1 ">
+          <div class="sp-search-wrap col-lg-11">
+            <div class="search">
+              <div class="wrap-input-search">
+                <input [class]="showInputSearch? 'input-search tran' :'input-search '" type="text"
+                  placeholder="Từ khoá">
+              </div>
+              <i (click)="showInput()"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                  fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></i>
+            </div>
+            <div class="lang">
+              <div class="lang-vn "><a class="active-lang" href="">VI</a></div>
+              <div class="lang-en"><a href="">EN</a></div>
+            </div>
+            <div id="icon-menu-mobile" class="col-lg-1">
+              <i *ngIf="!checkBtnMenu" (click)="showMenu()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </i>
+
+            </div>
+          </div>
+
+        </div>
+
+
       </div>
+
     </div>
   </div>
 

@@ -1,0 +1,26 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f7f6;
+  margin: 10px;
+  padding: 25px 0;
+  color: #231f20;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  img {
+    width: 70px;
+    height: 70px;
+  }
+  .span1 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .span2 {
+    font-size: 16px;
+  }
+&:hover{
+     background-color: #fff;
+}
+}

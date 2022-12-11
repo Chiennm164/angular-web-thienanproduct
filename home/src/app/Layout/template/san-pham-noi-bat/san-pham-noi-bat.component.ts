@@ -1,11 +1,11 @@
-import { Component, Input, ɵɵNgOnChangesFeature } from '@angular/core';
+import { Component  ,Input} from '@angular/core';
 
 @Component({
-  selector: 'app-san-pham-thuc-hien',
-  templateUrl: './san-pham-thuc-hien.component.html',
-  styleUrls: ['./san-pham-thuc-hien.component.scss'],
+  selector: 'app-san-pham-noi-bat',
+  templateUrl: './san-pham-noi-bat.component.html',
+  styleUrls: ['./san-pham-noi-bat.component.scss']
 })
-export class SanPhamThucHienComponent {
+export class SanPhamNoiBatComponent {
   @Input() listItem: any;
 
   list: any[] = [];

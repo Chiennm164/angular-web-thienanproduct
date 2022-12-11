@@ -57,7 +57,39 @@ p{
   margin-left: auto;
 }
 
+.btn-dangkytuvan {
+  display: flex;
+  border: 2px solid #fff;
+  width: fit-content;
+  border-radius: 25px;
+  background-color: #b8292f;
 
+  animation-name: btnDangKyTuVan;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
+  .btn-dangkytuvan-wrap {
+
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    .images {
+      // background-color: #fff;
+      padding-right: 10px;
+    }
+    .text {
+      background: transparent;
+      cursor: pointer;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}
 @keyframes btnDangKyTuVan {
   0% {
     margin-left: 6px;

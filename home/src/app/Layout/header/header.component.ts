@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   showInputSearch: boolean = false;
 
+  checkBtnMenu: boolean = false;
+
   listMenu: any = [
     {
       name: 'DỊCH VỤ',
@@ -270,5 +272,8 @@ export class HeaderComponent implements OnInit {
 
   showInput() {
     this.showInputSearch = !this.showInputSearch;
+  }
+  showMenu(){
+    this.checkBtnMenu = !this.checkBtnMenu
   }
 }

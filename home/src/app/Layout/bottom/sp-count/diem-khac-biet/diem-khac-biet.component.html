@@ -11,8 +11,8 @@
   </div>
   <div class="row">
     <div class="addons">
-      <div *ngFor="let item of data" class="col-sm-3">
-        <div class="addons-item">
+      <div *ngFor="let item of data" class="col-lg-3 col-md-12 col-sm-12">
+        <div class="addons-item ">
           <div class="addons-images">
             <div class="img">
               <img src="{{item.img}}" alt="">
@@ -25,7 +25,6 @@
           </div>
           <div class="addons-text">
             <div *ngFor="let item2 of item.text" class="addons-text-item">{{item2}}</div>
-            <!-- <div class="addons-text-item">đã và đang hợp tác</div> -->
           </div>
         </div>
       </div>

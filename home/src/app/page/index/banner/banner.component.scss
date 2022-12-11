@@ -1,0 +1,128 @@
+#banner {
+  margin-bottom: 20px;
+
+  .sp-container-fluid {
+    width: 100%;
+
+    .content {
+      overflow: hidden;
+      .title {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38px;
+        color: #000000;
+        margin: 50px auto;
+        text-align: center;
+        &::after {
+          content: "";
+          display: block;
+          height: 2px;
+          background: url(https://vietstarmax.vn/images/0new/line.png) no-repeat
+            center;
+          top: 48px;
+          width: 10%;
+          left: 45%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 15px;
+        }
+      }
+
+      .items {
+        overflow: hidden;
+        flex-wrap: nowrap;
+        transition: all ease 2s;
+        margin-right: 0px;
+
+        .item {
+          height: 445px;
+          padding: 25px 0;
+          background-color: #f5f5f5;
+          background-size: cover;
+          border-bottom: 1px solid #fd7e14;
+          background-position: right;
+
+          .banner-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .banner-content-wrap {
+              // transition: opacity 800ms ease 0s, transform, height, width;
+              // opacity: 1;
+              // visibility: visible;
+              // transform: translateY(0%);
+              .title-banner {
+                max-width: 420px;
+
+                font-size: 36px;
+                line-height: 1.2em;
+                font-weight: 700;
+                margin-bottom: 10px;
+              }
+              .des-banner {
+                color: #444;
+                max-width: 500px;
+                margin-bottom: 20px;
+                font-size: 18px;
+              }
+            }
+          }
+          .banner-img {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 365px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1190px) {
+  #banner {
+    .sp-container-fluid {
+      .content {
+        .items {
+          .item {
+            // height: 100%;
+            position: relative;
+            .banner-content {
+              position: absolute;
+              z-index: 9;
+              color: #fff !important;
+              .banner-content-wrap {
+                .title-banner {
+                  color: #fff;
+                }
+                .des-banner {
+                  color: #fff;
+                }
+              }
+            }
+            .banner-img {
+              z-index: 9;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            &::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              background: #b8292f;
+              opacity: 0.7;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
