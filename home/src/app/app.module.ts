@@ -75,7 +75,7 @@ import { ThuAmQcComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/thu-am-q
     BannerComponent,
     DanhSachDichVuComponent,
     SectionProductComponent,
-    SanPhamNoiBatComponent
+    SanPhamNoiBatComponent,
     SanXuatPhimDoanhNghiepComponent,
     SanXuatPhimQcAnimationComponent,
     PhimDuAnBatDongSanComponent,
