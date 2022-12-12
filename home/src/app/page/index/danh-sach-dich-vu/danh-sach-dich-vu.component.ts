@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-
+import { trigger, state, style, transition, animate } from '@angular/animations';
 @Component({
   selector: 'app-danh-sach-dich-vu',
   templateUrl: './danh-sach-dich-vu.component.html',
   styleUrls: ['./danh-sach-dich-vu.component.scss']
 })
 export class DanhSachDichVuComponent {
+
+
+  isShown: boolean = true
   dataListDichVu = [
     {
       src: 'https://vietstarmax.vn/images/0new/dich-vu-san-xuat-phim-tvc-quang-cao.png ',

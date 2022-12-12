@@ -25,6 +25,9 @@
       position: relative;
       .sp-menu-nav {
         width: 100%;
+        .btn-menu-mobile-show {
+          display: none;
+        }
         .sp-menu-ul {
           display: flex;
           align-items: center;
@@ -55,21 +58,18 @@
               .sp-menu-li-span2 {
                 position: absolute;
                 right: -5%;
-              display: none;
-
+                display: none;
               }
             }
             &:hover .sp-dropdown {
               display: block;
             }
-            &:hover .sp-menu-li-span{
+            &:hover .sp-menu-li-span {
               display: none;
             }
-            &:hover .sp-menu-li-span2{
+            &:hover .sp-menu-li-span2 {
               display: block;
               color: #fff;
-
-
             }
             .sp-dropdown {
               display: none;
@@ -185,13 +185,21 @@
         }
       }
     }
-    #icon-menu-mobile {
-      display: none;
-    }
   }
   .overlay {
     display: none;
   }
+
+  #btn-menu-mobile-show {
+    display: none;    width: 32px;
+    height: 32px;
+  }
+
+
+  #btn-menu-mobile-close{
+
+    display: none;
+}
 }
 
 .tran {
@@ -229,7 +237,8 @@
         }
       }
       #sp-menu {
-        // display: none;
+        display: none ;
+        // display: none !important;
         position: absolute;
         right: 0;
         width: 300px;
@@ -241,17 +250,7 @@
           height: 100vh;
           z-index: 99;
 
-          .btn-close-menu {
-            color: #fff;
-            float: right;
-            padding: 15px;
-            > i {
-              svg path {
-                stroke: #fff;
-                stroke-width: 0.8px;
-              }
-            }
-          }
+
           .sp-menu-ul {
             align-items: flex-start;
             flex-direction: column;
@@ -318,7 +317,6 @@
                         &:hover {
                           color: #b8292f;
                         }
-
                       }
                       i {
                         position: absolute;
@@ -356,13 +354,33 @@
           padding-right: 5px;
         }
       }
-      #icon-menu-mobile {
+      #btn-menu-mobile-show {
         padding-left: 5px;
         display: block;
         color: #b8292f;
+        cursor: pointer;
         i {
           svg path {
             stroke: #b8292f;
+            stroke-width: 0.8px;
+          }
+        }
+
+        &:hover {
+          .sp-header-wrap #sp-menu {
+            display: block;
+          }
+        }
+      }
+
+      #btn-menu-mobile-close{
+        display: block;
+        color: #fff;
+        float: right;
+        padding: 15px;
+        > i {
+          svg path {
+            stroke: #fff;
             stroke-width: 0.8px;
           }
         }

@@ -43,6 +43,8 @@ import { LoiichDvComponent } from './Layout/template/loiich-dv/loiich-dv.compone
 import { ChupAnhQuangCaoComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/chup-anh-quang-cao/chup-anh-quang-cao.component';
 import { ThietKeQcComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/thiet-ke-qc/thiet-ke-qc.component';
 import { ThuAmQcComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/thu-am-qc/thu-am-qc.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';import {trigger,state,style,animate,transition}from '@angular/animations';
+
 
 @NgModule({
   declarations: [
@@ -84,7 +86,7 @@ import { ThuAmQcComponent } from './page/dich-vu/san-xuat-phim-hinh-anh/thu-am-q
     ThietKeQcComponent,
     ThuAmQcComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes), AppRoutingModule],
+  imports: [BrowserModule, RouterModule.forRoot(routes), AppRoutingModule,BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
