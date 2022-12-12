@@ -38,7 +38,7 @@ export class ThuAmQcComponent {
           'https://vietstarmax.vn/images/2020/06/20/thu-am-qoang-cao.png',
         title: 'Giới thiệu và lợi ích của Thu âm quảng cáo',
         desc: [
-          'Dịch vụ Thu âm quảng cáo hàng đầu do VietstarMax cung cấp nhằm đáp ứng nhu cầu tiếp thị sản phẩm và quảng bá doanh nghiệp theo lối truyền thống. Dịch vụ thu âm quảng cáo do chúng tôi cung cấp được đầu tư kỹ càng về công nghệ máy móc và nhân sự chuyên nghiệp, đảm bảo cho ra đời những sản phẩm quảng cáo bằng giọng nói có tính truyền tải cao nhất.',
+          'Dịch vụ Thu âm quảng cáo hàng đầu do Thiên An cung cấp nhằm đáp ứng nhu cầu tiếp thị sản phẩm và quảng bá doanh nghiệp theo lối truyền thống. Dịch vụ thu âm quảng cáo do chúng tôi cung cấp được đầu tư kỹ càng về công nghệ máy móc và nhân sự chuyên nghiệp, đảm bảo cho ra đời những sản phẩm quảng cáo bằng giọng nói có tính truyền tải cao nhất.',
           'Quảng cáo tiếp thị khuyến mại hiện đang là chìa khoá đem lại doanh thu lớn cho mỗi doanh nghiệp. Thực tế cho thấy hiệu quả quảng cáo đem lại từ quảng cáo khuyến mại là rất lớn và rất nhiều chủ doanh nghiệp đã không ngần ngại bỏ ra một số tiền lớn để đầu tư cho quảng cáo để giúp thương hiệu và sản phẩm của mình được nhiều khách hàng biết tới chỉ trong thời gian ngắn nhất.',
           'Chính vì lý do đó mà chúng tôi đem lại cho Quý doanh nghiệp những dịch vụ và hình thức quảng cáo hiệu quả nhất mà tiết kiệm được nhiều thời gian và chi phí nhất.',
         ],
