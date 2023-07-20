@@ -1,0 +1,9 @@
+<app-banner-layout [list]="banner"></app-banner-layout>
+
+<div id="ContentGioiThieu">
+    <div class="container">
+     <div *ngFor="let item of dataTemplate" class="row">
+          <app-template-ve-thien-an [data] = item></app-template-ve-thien-an>
+     </div>
+    </div>
+</div>

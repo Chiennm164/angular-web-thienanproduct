@@ -16,7 +16,7 @@ export class TaiSaoLuaChonLayoutComponent {
 
   // this.taiSao = {
   //   header: {
-  //     title: 'Tại sao nên lựa chọn VietstarMAX làm đối tác sản xuất TVC',
+  //     title: 'Tại sao nên lựa chọn Thiên An làm đối tác sản xuất TVC',
   //     desc: 'Thị trường phim quảng cáo hiện nay có không ít công ty làm TVC quảng cáo. Song để tìm được một công ty sản xuất phim quảng cáo chuyên nghiệp, nhiều năm kinh nghiệm làm phim quảng cáo trên truyền hình như Vietstarmax là rất khó.',
   //   },
   //   content: {

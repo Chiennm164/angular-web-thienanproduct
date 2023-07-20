@@ -1,0 +1,24 @@
+#sp-breadcrumb2 {
+    .breadcrumb {
+      padding: 15px 0;
+      margin-bottom: 1rem;
+      background-color: #ffffff;
+      border-radius: 0;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+      .breadcrumb-item,
+      .active {
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          color: #b8292f;
+          text-decoration: none;
+        }
+      }
+      .active {
+        font-size: 14px;
+        font-weight: 400;
+        color: #6c757d;
+      }
+    }
+}

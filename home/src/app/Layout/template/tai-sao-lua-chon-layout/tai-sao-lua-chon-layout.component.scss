@@ -58,7 +58,7 @@
                 &::before {
                     content: "";
                     display: block;
-                    background: url(https://vietstarmax.vn/images/0new/contact-ico.png) left no-repeat;
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/contact-ico.webp) left no-repeat;
                     width: 35px;
                     height: 36px;
                     position: relative;
@@ -99,7 +99,7 @@
             &::before {
                 position: relative;
                 content: "" !important;
-                background: url(https://vietstarmax.vn/templates/vietstarmax/images/check.png) no-repeat left;
+                background: url(https://vietstarmax.vn/wp-content/uploads/2022/07/checked.webp) no-repeat left;
                 display: block;
                 width: 20px;
                 height: 20px;
@@ -113,15 +113,16 @@
         p{
             font-size: 18px;
             color: #000000;
-            &::before {
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                content: "\f105";
-                float: left;
-                margin-left: 0px;
-                display: block;
+            i {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
                 margin-right: 20px;
-                color: #666;
+                margin-bottom: 3px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+        
             }
         }
     }
@@ -144,7 +145,7 @@
                 width: 43px;
                 height: 33px;
                 display: block;
-                background: url(https://vietstarmax.vn/templates/vietstarmax/images/bell.png) no-repeat left;
+                background: url(https://vietstarmax.vn/wp-content/uploads/2022/07/bell.webp) no-repeat left;
                 float: left;
                 margin-right: 10px;
                 position: relative;
@@ -181,6 +182,9 @@
         }
     }
 }
+
+
+
 
 .lien-he{
     margin-top: 30px;

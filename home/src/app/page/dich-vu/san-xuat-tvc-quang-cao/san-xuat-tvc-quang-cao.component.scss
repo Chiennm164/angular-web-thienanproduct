@@ -1,0 +1,509 @@
+#TVC-QC{
+    overflow: hidden;
+
+
+    .nav{
+
+        ul.sppb-nav{
+            background: linear-gradient(45deg, #b8292f 0%, #ed5f6d 100%);
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li{
+                text-align: center;
+                cursor: pointer;
+                a{
+                    display: block;
+                    padding: 13px 15px;
+                    font-size: 14px;
+                    color: #fff;
+                    font-weight: 600;
+                    line-height: 1.42857143;
+                    text-transform: uppercase;
+                }
+            }
+
+            .wrapper-nav{
+            }
+
+            .active{
+                position: relative;
+
+                    &::after{
+                        bottom: 5px;
+                        right: 10px;
+                        content: "";
+                        width: 60%;
+                        position: absolute;
+                        background: url(https://vietstarmax.vn/wp-content/uploads/2022/07/tab-active.webp) no-repeat right;
+                        height: 2px;
+                    }
+                
+            }
+        }
+    }
+
+    .tai-sao-chon-thienan{
+        padding: 50px 0;
+        .title{
+            font-weight: 400;
+            text-align: center;
+            font-size: 32px;
+            color: #000000;
+            &:after {
+                content: "";
+                display: block;
+                height: 2px;
+                background: url(https://vietstarmax.vn/images/0new/line.png) no-repeat center;
+                top: 48px;
+                width: 10%;
+                left: 45%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+            }
+        }
+        .sppb-addon-content {
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            .ld1,.ld2,.ld3,.ld4,.ld5,.ld6,.ld7,.ld8,.ld9,.ld10,.ld11,.ld12{
+                position: relative;
+                display: inline-block;
+                margin-bottom: 35px;
+                &:before {
+                    content: "";
+                    width: 90px;
+                    height: 90px;
+                    display: block;
+                    float: left;
+                    margin-right: 20px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    background-size: 70px !important;
+                    background-position: center !important;
+                    box-shadow: -1px 4px 1px #eee;
+                }
+                &:hover{
+                    &:before{
+                        animation-name: spin1;
+                        animation-duration: 1.5s;
+                        animation-timing-function: linear;
+                        animation-delay: 0s;
+                        animation-iteration-count: infinite;
+                        animation-direction: normal;
+                    }
+                }
+                span {
+                    font-size: 36px;
+                    color: #b8292f;
+                    font-weight: 700;
+                    margin-right: 5px;
+                }
+            }
+
+            .ld1{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/ti.webp) no-repeat center;
+                }
+            }
+            .ld2{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/suu.webp) no-repeat center;
+                }
+            }
+            .ld3{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/dan.webp) no-repeat center;
+                }
+            }
+            .ld4{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/mao.webp) no-repeat center;
+                }
+            }
+            .ld5{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/thin.webp) no-repeat center;
+                }
+            }
+            .ld6{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/ty.webp) no-repeat center;
+                }
+            }
+            .ld7{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/ngo.webp) no-repeat center;
+                }
+            }
+            .ld8{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/mui.webp) no-repeat center;
+                }
+            }
+            .ld9{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/than.webp) no-repeat center;
+                }
+            }
+            .ld10{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/dau.webp) no-repeat center;
+                }
+            }
+            .ld11{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/tuat.webp) no-repeat center;
+                }
+            }
+            .ld12{
+                &:before {
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/06/hoi.webp) no-repeat center;
+                }
+            }
+        }
+    }
+
+    .quy-trinh-san-xuat{
+        padding: 50px 30px;
+        .title{
+            font-weight: 400;
+            text-align: center;
+            font-size: 32px;
+            color: #000000;
+            &:after {
+                content: "";
+                display: block;
+                height: 2px;
+                background: url(https://vietstarmax.vn/images/0new/line.png) no-repeat center;
+                top: 48px;
+                width: 10%;
+                left: 45%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+            }
+        }
+
+        .quy-trinh{
+            margin:0 15px 30px 0;
+            border-bottom: 1px dashed #aaa;
+            display: flex;
+            .steps {
+                display: block;
+                width: 20%;
+                float: left;
+                text-align: center;
+                position: relative;
+                p{
+                    &:first-child {
+                        font-weight: 600;
+                    }
+                    &:last-child {
+                        display: block;
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background: #b8292f;
+                        border-radius: 50%;
+                        color: #fff;
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 2px;
+                        height: 23%;
+                        border-left: 1px dashed #b8292f;
+                        left: 49%;
+                        top: 55%;
+                    
+                    }
+
+                }
+            }
+
+            .steps-content {
+                display: block;
+                float: right;
+                min-height: 180px;
+                padding-left: 15px;
+                .ten-quy-trinh {
+                    font-weight: 600;
+                    font-size: 20px;
+                    padding: 0 15px;
+                    background: #f5f5f5;
+                    border-radius: 15px;
+                    width: 78%;
+                    &:hover{
+                        color: #b8292f;
+                    }
+                }
+            }
+        }
+
+        .b8{
+            position: relative;
+            .steps {
+                position: absolute;
+                display: block;
+                border-top: 2px solid #b8292f;
+                border-right: 2px dashed #b8292f;
+                width: 50px;
+                border-radius: 0px 10px 0px 0px;
+                height: 130px;
+                top: 10px;
+                &:before {
+                    content: "";
+                    border: solid #b8292f;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    margin-right: 20px;
+                    margin-bottom: 3px;
+                    transform: rotate(1355deg);
+                    -webkit-transform: rotate(135deg);
+                    position: absolute;
+                    top: -5.5px;
+                    left: 0;
+                }
+            }
+            .steps-content {
+                margin-top: 181px;
+                float: left;
+                margin-bottom: 50px;
+                min-height: auto;
+                p{
+                    color: #b8292f;
+                }
+            }
+        }
+
+        .column-reverse{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    .cam-ket-dich-vu{
+        padding: 50px 15px;
+        .title{
+            font-weight: 400;
+            text-align: center;
+            font-size: 32px;
+            color: #000000;
+            &:after {
+                content: "";
+                display: block;
+                height: 2px;
+                background: url(https://vietstarmax.vn/images/0new/line.png) no-repeat center;
+                top: 48px;
+                width: 10%;
+                left: 45%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15px;
+            }
+        }
+
+        .cam-ket-content{
+            p{
+                padding: 0 15px;
+                border-radius: 14px;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+            .cam-ket-title{
+                border-radius: 0;
+                margin-top: 40px;
+                font-size: 21px;
+                font-weight: 700;
+                color: #b8292f;
+                text-transform: uppercase;
+                position: relative;
+                padding-left: 40px;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background: url(https://vietstarmax.vn/wp-content/uploads/2022/07/checked.webp) no-repeat left;
+                    width: 25px;
+                    height: 25px;
+                    top: 3px;
+                    left: 0;
+                    padding-right: 30px;
+                }
+            }
+
+        }
+    }
+
+    .cau-hoi-thuong-gap{
+        padding: 50px 0;
+        .title{
+            font-size: 28px;
+            color: #000000;
+            line-height: 33px;
+            text-align: center;  
+        }
+
+            .questions{
+                .question{
+                    .show{
+                        border-bottom: 1px solid #e5e5e5;
+                        padding: 10px 30px 10px 15px;
+                        display: flex;
+                        justify-content: space-between;
+                        cursor: pointer;
+                        .text{
+                            font-size: 14px;
+                            color: #000000;
+                            font-weight: 700;
+                        }
+                        .icon{
+                            width: 12px;
+                            height: 12px;
+                            transform: rotate(45deg);
+                            
+                            &::before {
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                border-width: 4px 4px 0 0;
+                                border-style: solid;
+                                border-color: #ccc;
+                                transition: .2s ease;
+                                display: block;
+                                transform-origin: 100% 0;
+                            }
+    
+                            &:after {
+                                content: '';
+                                float: left;
+                                position: relative;
+                                top: -100%;
+                                width: 100%;
+                                height: 100%;
+                                border-width: 4px 0 0;
+                                border-style: solid;
+                                border-color: #ccc;
+                                transform-origin: 100% 0;
+                                transition:.2s ease;
+                            }
+                        }
+                        .drop-dow{
+                            transform: rotate(135deg);
+                        }
+    
+                    }
+    
+                    .hidden{
+                        // display: none;
+                        padding: 15px;
+                        font-size: 18px;
+                        color: #000000;
+                        line-height: 27px;
+                    }
+
+                }
+            }
+        
+    }
+
+    .article-ratings {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        .article-ratings {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            .ratings-label{
+                font-size: 18px;
+                color: #000000;
+                font-weight: 500;
+                margin-right: 3px;
+            }
+            .rating-symbol {
+                unicode-bidi: bidi-override;
+                direction: rtl;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 5px;
+                transform: translateY(-2px);
+                .hinh_ngoi_sao{
+                    margin-right: 5px;
+                    color: #f6bc00;
+                }
+            }
+            .ratings-count {
+                font-size: 0.785rem;
+                color: #999;
+            }
+        }
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 787px) {
+    #TVC-QC{
+
+        .nav{
+            ul.sppb-nav{
+
+                li{
+                    a{
+                        padding: 10px 5px;
+                        font-size: 14px;
+                    }
+                }
+                .active{
+                    &::after{
+                        content: "";
+                        background-image: none;
+                    }
+                }
+            }
+        }
+
+        .quy-trinh-san-xuat{
+            padding: 50px 15px;
+            padding-left: 25px;
+            .quy-trinh{
+                margin:0 15px 30px 0;
+                border-bottom: 1px dashed #aaa;
+                display: flex;
+
+                .steps-content {
+                    .ten-quy-trinh {
+                        width: 100%;
+                    }
+                }
+            }
+
+
+            .column-reverse{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+

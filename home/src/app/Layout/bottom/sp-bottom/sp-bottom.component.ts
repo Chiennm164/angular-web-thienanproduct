@@ -8,66 +8,39 @@ import { Component } from '@angular/core';
 export class SpBottomComponent {
   listColum1: any = [
     {
-      name: 'Văn Phòng Hà Nội',
+      name: 'VĂN PHÒNG HÀ NỘI',
       value: [
-        'Tầng 5 Tòa nhà 25T1, Hoàng Đạo Thúy, Cầu Giấy, Hà Nội',
-        'info@vietstarmax.vn',
-        '024.3555.3296 Fax : 024.3555.3296',
-        'Hotline: 0982 840 840',
-      ],
-    },
-    {
-      name: 'VĂN PHÒNG HCM',
-      value: [
-        ' Lầu 12A04 - Tháp A - Toà nhà Centana Thủ Thiêm, 36 Mai Chí Thọ, quận 2, TP HCM',
-        ' hcm@vietstarmax.vn',
-        ' 028.6293.9653 Fax : 028.6293.9653',
-        ' Hotline: 096 280 4086',
+        'Địa chỉ: Số 8, Láng Hạ, Thành Công, Ba Đình, Hà Nội.',
+        'Email: info@thienanproduction.vn',
+        'Fax: 0943268999',
+        'Hotline: 0943268999',
       ],
     },
   ];
   listColum2: any = [
     {
-      name: 'DỊCH VỤ SẢN XUẤT PHIM',
+      name: 'DỊCH VỤ ',
       value: [
-        'Sản xuất TVC quảng cáo',
-        'Sản xuất Viral Video',
-        'Sản xuất phim doanh nghiệp',
-        'Sản xuất TVC 3D quảng cáo',
-        'Thu âm quảng cáo - Voice Radio',
-        'Chụp ảnh quảng cáo',
-      ],
-    },
-    {
-      name: 'DỊCH VỤ TRUYỀN THÔNG',
-      value: [
-        'Dịch vụ truyền thông tổng thể',
-        'Dịch vụ marketing Online',
-        'Dịch vụ booking quảng cáo',
-        'Quảng cáo truyền hình',
-        'Quảng cáo Radio',
+        'Sản xuất Phim Quảng Cáo',
+        'Sản xuất Phim Doanh Nghiệp',
+        'Sản xuất Phim Tài Liệu Truyền Hình',
+        'Sản xuất Phim Sitcom',
+        'Sản xuất Hài Tết',
+        'Sản xuất phim Viral',
+        'Tổ Chức Sự Kiện',
+        'Cho thuê trường quay',
       ],
     },
   ];
   listColum3: any = [
     {
-      name: 'VĂN HOÁ VIETSTARMAX ',
+      name: 'SẢN PHẨM',
       value: [
-        'Về Vietstarmax',
-        'Đội ngũ nhân sự',
-        'Bản tin nội bộ',
-        'Cơ hội việc làm',
-        'Khách hàng - Đối tác',
-      ],
-    },
-    {
-      name: '12 LÝ DO CHỌN VSM',
-      value: [
-        '        12 Lý do chọn VSM',
-        'Quy trình thực hiện',
-        'Câu hỏi thường gặp',
-        'Ý kiến khách hàng',
-        'Sản phẩm nổi bật',
+        'Sản xuất Phim Quảng Cáo',
+        'Sản xuất Phim Doanh Nghiệp',
+        'Sản xuất Phim Tài Liệu Truyền Hình',
+        'Sản xuất Phim Sitcom',
+        'Sản xuất Hài Tết',
       ],
     },
   ];
@@ -76,27 +49,18 @@ export class SpBottomComponent {
       name: ' FOLLOW US',
       value: [
         {
-          icon: 'https://vietstarmax.vn/images/0new/fb.png',
-          value2: 'FANPAGE VIETSTARMAX',
+          icon: 'https://vietstarmax.vn/wp-content/uploads/2022/11/fb.webp',
+          value2: 'FANPAGE THIÊN AN',
         },
         {
-          icon: 'https://vietstarmax.vn/images/0new/youtube.png',
-          value2: 'VIETSTARMAX CHANEL',
+          icon: 'https://vietstarmax.vn/wp-content/uploads/2022/11/youtube.webp',
+          value2: 'THIÊN AN CHANEL',
         },
         {
-          icon: 'https://vietstarmax.vn/images/0new/youtube.png',
-          value2: 'MUỐI TV',
+          icon: 'https://vietstarmax.vn/wp-content/uploads/2022/11/youtube.webp',
+          value2: 'THIÊN AN TV',
         },
       ],
-    },
-    {
-      name: 'ĐIỀU KHOẢN',
-      value: [
-        {
-          icon: '',
-          value2: 'Chính sách bảo mật thông tin',
-        }
-        ]
     },
   ];
 }

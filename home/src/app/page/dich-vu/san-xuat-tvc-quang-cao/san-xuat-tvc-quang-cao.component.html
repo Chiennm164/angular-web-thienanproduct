@@ -1,0 +1,289 @@
+<div id="TVC-QC">
+    <app-banner-layout [list]="banner"></app-banner-layout>
+
+    <div class="nav">
+        <ul class="sppb-nav sppb-nav-lines" role="tablist">
+
+            <li *ngFor="let item of navigation">
+                <div class="wrapper-nav" [ngClass]="item.id === idChangeNav? 'active':''">
+                    <a id="#sppb-content1-1" (click)="changeNav(item.id)"> {{item.text}}</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div *ngIf="navigation[0].id === idChangeNav">
+        <app-gioi-thieu-layout [list]="gioiThieu"></app-gioi-thieu-layout>
+        <app-loi-ich-layout [list]="loiIch"></app-loi-ich-layout>
+        <app-dich-vu-bao-hom-layout [list]="dichVu"></app-dich-vu-bao-hom-layout>
+        <app-tai-sao-lua-chon-layout [list]="taiSao"></app-tai-sao-lua-chon-layout>
+        <app-san-pham-thuc-hien [listItem]="list"></app-san-pham-thuc-hien>
+    </div>
+
+    <div *ngIf="navigation[1].id === idChangeNav">
+        <div class="tai-sao-chon-thienan body-wrapper ">
+            <h2 class="title">12 lý do chọn THIÊN AN</h2>
+            <div class="sppb-addon-content row">
+                <div class="col-12 col-sm-6">
+                    <p class="ld1"><span>01</span>Thiên An đã thực hiện hơn 2.000 Video Clip chuyên nghiệp. (TVC
+                        quảng cáo - Phim doanh nghiệp - Viral video - Phim ngắn - Gameshow - Talkshow - Tin tức -
+                        Reality show, ... </p>
+
+                    <p class="ld2"><span>02</span>Thương hiệu có hơn 12 năm kinh nghiệm trong lĩnh vực truyền thông
+                        quảng cáo.</p>
+
+                    <p class="ld3"><span>03</span>Hơn 1000 khách hàng đã đồng hành trong suốt 12 năm qua</p>
+
+                    <p class="ld4"><span>04</span>Hơn 300 chiến dịch truyền thông của khách hàng được triển khai</p>
+
+                    <p class="ld5"><span>05</span>Vinh dự nhận được Giải thưởng TVC Golden Bell (Quả chuông vàng) năm
+                        2016 Hội quảng cáo Việt Nam trao tặng</p>
+
+                    <p class="ld6"><span>06</span>Ý tưởng sáng tạo: Mỗi một dự án thực hiện đều có ý tưởng vô cùng độc
+                        đáo và mới lạ.</p>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <p class="ld7"><span>07</span>Đã từng hợp tác với các Đạo diễn, DOP, Quay phim, Hậu kỳ, VFX, Color
+                        Garding chuyên gia đến từ Mỹ, Thái Lan, Singapore.</p>
+
+                    <p class="ld8"><span>08</span>Đảm bảo 100% dự án đạt tiến độ cam kết với khách hàng.</p>
+
+                    <p class="ld9"><span>09</span>Nguồn nhân lực tài năng, chuyên gia giỏi trình độ cao gắn bó suốt 12
+                        năm qua.</p>
+
+                    <p class="ld10"><span>10</span>Lập kế hoạch truyền thông Tổng thể trên các kênh online và offline
+                        bằng công cụ Rating của TNS</p>
+
+                    <p class="ld11"><span>11</span>Lưu trữ tài nguyên video đến 10 năm trên Sever máy chủ.</p>
+
+                    <p class="ld12"><span>12</span>Hậu kỳ chuyên nghiệp chuẩn quốc tế: Server dựng phim, phòng thu âm
+                        chuyên dụng, Bàn dựng chỉnh màu Davince </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="navigation[2].id === idChangeNav">
+        <div class="quy-trinh-san-xuat body-wrapper">
+            <h2 class="title">Quy trình sản xuất TVC</h2>
+            <div class="sppb-addon-content row">
+
+                <div class="col-12 col-sm-6">
+                    <div class="quy-trinh">
+                        <div class="steps">
+                            <p>BƯỚC</p>
+                            <p>1</p>
+                        </div>
+                        <div class="steps-content">
+                            <p class="ten-quy-trinh">Gặp gỡ khách hàng</p>
+                            <p>- Thien An tiếp nhận thông tin yêu cầu của khách hàng. </p>
+                            <p>- Khách hàng mô tả đầy đủ mong muốn thực hiện làm phim quảng cáo TVC thế nào, chất lượng
+                                ra sao, TVC có sử dụng diễn viên không, dự trù ngân sách thế nào, thể loại TVC mong
+                                muốn, thời lượng bao nhiêu, phát sóng trên nền tảng gì?</p>
+                        </div>
+                    </div>
+
+                    <div class="quy-trinh">
+                        <div class="steps">
+                            <p>BƯỚC</p>
+                            <p>2</p>
+                        </div>
+                        <div class="steps-content">
+                            <p class="ten-quy-trinh">Gửi ý tưởng kịch bản cho khách hàng</p>
+                            <p>- Sau khi tiếp nhận đầy đủ thông tin của khách hàng, phòng Sáng tạo cùng phòng khách hàng
+                                cùng họp và lên định hướng ý tưởng cho khách hàng. </p>
+                            <p>- Thiên An gửi ý tưởng cho khách hàng khoảng 3-5 kịch bản phù hợp</p>
+                        </div>
+                    </div>
+
+                    <div class="quy-trinh">
+                        <div class="steps">
+                            <p>BƯỚC</p>
+                            <p>3</p>
+                        </div>
+                        <div class="steps-content">
+                            <p class="ten-quy-trinh">Ký hợp đồng thực hiện</p>
+                            <p>- Sau khi ý tưởng sáng tạo được trình bày và khách hàng đồng ý, Thien An sẽ tiến hành
+                                báo giá theo kịch bản.</p>
+                            <p>- Ký hợp đồng thực hiện làm phim quảng cáo.</p>
+                        </div>
+                    </div>
+
+                    <div class="quy-trinh">
+                        <div class="steps">
+                            <p>BƯỚC</p>
+                            <p>4</p>
+                        </div>
+                        <div class="steps-content">
+                            <p class="ten-quy-trinh">Tổ chức sản xuất</p>
+                            <p>- Thien An trao đổi với Đạo diễn và Hoạ sĩ để vẽ phân cảnh kịch bản theo ý tưởng được
+                                duyệt</p>
+                            <p>- Lên phương án sản xuất cho phim quảng cáo bao gồm: Duyệt diễn viên, duyệt bối cảnh,
+                                trao đổi Đạo diễn, DOP, quay phim, VTR, âm thanh, Ánh sáng, vận chuyển</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 column-reverse">
+                    <div class="quy-trinh">
+                        <div class="steps">
+                            <p>BƯỚC</p>
+                            <p>5</p>
+                        </div>
+                        <div class="steps-content">
+                            <p class="ten-quy-trinh">Tiền kỳ - Shooting</p>
+                            <p>- Ekip sẽ thực hiện quay các đoạn phim theo kịch bản, khâu tiền kỳ kéo dài từ 1-3 ngày
+                                tuỳ theo nội dung kịch bản</p>
+                            <p>- Song song với việc quay phim Team đồ hoạ 2D và 3D làm việc ngay sau khi chốt được
+                                Storyboard và phân cảnh kịch bản </p>
+                        </div>
+                    </div>
+                    <div class="quy-trinh">
+                        <div class="steps">
+                            <p>BƯỚC</p>
+                            <p>6</p>
+                        </div>
+                        <div class="steps-content">
+                            <p class="ten-quy-trinh"> Hậu kỳ</p>
+                            <p>- Khâu hậu kỳ bao gồm: Dựng nháp offline, chỉnh màu, dựng kỹ xảo 2d, 3d, thu thanh, lồng
+                                tiếng, hoà âm phối khí, dựng Online. </p>
+                            <p>- Thời gian hậu kỳ thông thường dự kiến từ 10-15 ngày</p>
+                        </div>
+                    </div>
+                    <div class="quy-trinh">
+                        <div class="steps">
+                            <p>BƯỚC</p>
+                            <p>7</p>
+                        </div>
+                        <div class="steps-content">
+                            <p class="ten-quy-trinh">Duyệt nghiệm thu phim</p>
+                            <p>- Sau khi hoàn thiện phim, bản TVC hoàn thiện sẽ được gửi cho khách hàng duyệt lần cuối
+                                cùng</p>
+                            <p>- Final phim và in đĩa theo và gửi đi phát sóng</p>
+                        </div>
+                    </div>
+
+                    <div class="quy-trinh b8">
+                        <div class="steps">
+                        </div>
+                        <div class="steps-content">
+                            <p class="ten-quy-trinh">Trao đổi với khách hàng
+                                để thực hiện dự án tiếp theo</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="navigation[3].id === idChangeNav">
+        <div class="cam-ket-dich-vu body-wrapper">
+            <h2 class="title">Cam kết dịch vụ</h2>
+            <div class="cam-ket-content">
+                <p>Thien An luôn cam kết thực hiện đầy đủ các quy trình sản xuất TVC để sản phẩm TVC luôn
+                    đạt chất lượng tốt nhất. Ngoài ra chúng tôi còn cam kết đặc biệt về</p>
+
+                <p class="cam-ket-title">Cam kết giá thành cạnh tranh nhất</p>
+
+                <p>Chúng tôi có nhiều mức giá khác nhau cho mỗi ý tưởng kịch bản phù hợp với ngân sách của khách hàng.
+                    Trong mỗi phân khúc đó chúng tôi đảm bảo giá thành sẽ cạnh tranh nhất</p>
+
+                <p class="cam-ket-title">Cam kết gửi khách hàng những ý tưởng tốt nhất</p>
+
+                <p>Khi nhận được bản Brief của khách hàng, chúng tôi sẽ lên từ 5-10 kịch bản, sau đó tuyển chọn ra 3-5
+                    kịch bản tốt nhất để gửi khách hàng</p>
+
+                <p class="cam-ket-title">Cam kết máy móc trang thiết bị tốt nhất</p>
+
+                <p>Trên thị trường có rất nhiều phương án thiết bị từ Full HD, 4K, 8K, tuỳ theo dự án chúng tôi sẽ đề
+                    suất cho khách hàng phương án tốt nhất với mức ngân sách mà khách hàng có thể chi trả </p>
+
+                <p class="cam-ket-title">Cam kết thời gian hoàn thành sản xuất nhanh nhất</p>
+
+                <p>Thông thường các dự án sẽ triển khai từ 15-30 ngày thực hiện, tuy nhiên có những dự án đúng mùa cao
+                    điểm và cần bắt trend thì chúng tôi có thể thực hiện từ 7-10 ngày</p>
+
+                <p class="cam-ket-title">Cam kết kỹ thuật đồ họa 2D, 3D, kỹ thuật lồng tiếng và kỹ thuật dựng phim
+                    tốt nhất</p>
+
+                <p>Tuỳ theo kịch bản sẽ có đồ hoạ 2D và 3D, với kỹ thuật 3D công nghệ cập nhật mới nhất, chúng tôi sẽ
+                    gửi khách hàng phương án tốt nhất cho dự án đó</p>
+
+                <p class="cam-ket-title">Cam kết tính bảo mật thông tin cho khách hàng tốt nhất</p>
+
+                <p>Trong mỗi dự án có nhiều thông tin liên quan đến tính kỹ thuật cần bảo mật của khách hàng, chúng tôi
+                    đều có hợp đồng cam kết để đảm bảo thông tin không bị thất thoát</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-wrapper cau-hoi-thuong-gap">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="title">Câu hỏi thường gặp</h3>
+
+                <div class="questions">
+                    <div class="question" *ngFor="let item of questions">
+                        <div class="show" (click)="showQuestion(item.id)">
+                            <div class="text">{{item.show}}</div>
+                            <div class="icon" [ngClass]="item.active?'drop-dow':''"></div>
+                        </div>
+                        <div class="hidden" *ngIf="item.active">
+                            {{item.hidden}}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="article-ratings">
+        <div class="article-ratings" data-id="434">
+            <span class="ratings-label">Ratings</span>
+            <div class="rating-symbol">
+                <div class="hinh_ngoi_sao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                </div>
+                <div class="hinh_ngoi_sao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                </div>
+                <div class="hinh_ngoi_sao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                </div>
+                <div class="hinh_ngoi_sao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                </div>
+                <div class="hinh_ngoi_sao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                </div>
+            </div>
+            <span class="fa fa-spinner fa-spin" style="display: none;"></span>
+            <span class="ratings-count">(8)</span>
+        </div>
+    </div>
+
+</div>

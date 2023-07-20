@@ -1,0 +1,246 @@
+
+
+
+#modal-DangKy{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100000;
+
+    .modal-dialogs {
+        position: relative;
+        width: auto;
+        margin: 10px;
+        z-index: 100001;
+        pointer-events: all;
+
+        animation-name: show;
+        animation-duration: 0.35s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        
+        .modal-content {
+            position: relative;
+            z-index: 100002;
+            pointer-events: all;
+            border-radius: 4px;
+            padding: 10px;
+            .close {
+                background-color: transparent;
+                border: none;
+                font-size: 40px;
+                color: #fff;
+                opacity: 1;
+                position: absolute;
+                top: 0;
+                right: 5px;
+                z-index: 100003;
+                cursor: pointer;
+                font-weight: 700;
+                line-height: 1;
+                text-shadow: 0 1px 0 #fff;
+                &:hover {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                    opacity: .8;
+                }
+            }
+
+            .modal-body {
+                position: relative;
+                padding: 0;
+                .n8 {
+                    max-width: 600px;
+                    margin: auto;
+                    position: relative;
+                    .n0 {
+                        position: absolute;
+                        top: 16%;
+                        left: 37%;
+                        width: 57%;
+                        height: 23%;
+                        /* background: red; */
+                        z-index: 1;
+                    }
+                    .n1{
+                        max-width: 100%;
+                        height: auto;
+                        border: 0;
+                    }
+                    .n2 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        .form-controls {
+                            height: auto;
+                            line-height: 1.33333;
+                            padding: 8px 18px;
+                            border: 2px solid #ebebeb;
+                            margin-bottom: 6px;
+                            outline: none;
+                        }
+                        .n3 {
+                            position: absolute;
+                            top: 48.9%;
+                            left: 7%;
+                            width: 41.1%;
+                            border: none;
+                            background: transparent;
+                        }
+                        .n4 {
+                            position: absolute;
+                            top: 48.9%;
+                            left: 51.7%;
+                            width: 41.1%;
+                            border: none;
+                            background: transparent;
+                        }
+                        .n5 {
+                            position: absolute;
+                            top: 56.7%;
+                            left: 7.2%;
+                            width: 85.1%;
+                            border: none;
+                            background: transparent;
+                        }
+                        .n6 {
+                            position: absolute;
+                            top: 64.4%;
+                            left: 7.5%;
+                            width: 85.1%;
+                            border: none;
+                            background: transparent;
+                            height: 19%;
+                            resize: none;
+                        }
+                        .n7 {
+                            color: #910915;
+                            background: #ffefe0;
+                            border: none;
+                            position: absolute;
+                            top: 86%;
+                            left: 35%;
+                            width: 36%;
+                            font-size: 20px;
+                            letter-spacing: 0;
+                            font-weight: bold;
+                            padding: 13px 13px 11px;
+                            line-height: 14px;
+                            border-radius: 3px;
+                            text-transform: uppercase;
+                            text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+
+                            animation-name: pulse;
+                            animation-duration: 0.5s;
+                            animation-timing-function: linear;
+                            animation-delay: 0s;
+                            animation-iteration-count: infinite;
+                            animation-direction: alternate;
+                            &:hover {
+                                background: #f8b714;
+                            }
+                        }
+                        .n9 {
+                            position: absolute;
+                            top: 92%;
+                            left: 0%;
+                            width: 100%;
+                            text-align: center;
+                            a {
+                                color: rgb(255 255 255 / 73%);
+                                text-decoration: underline;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px){
+    #modal-DangKy{
+        .modal-dialogs {
+            width: 600px;
+            margin: 30px auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+
+    #modal-DangKy{
+        .modal-dialogs {
+            .modal-content {
+                .close {
+                    font-size: 36px;
+                }
+                .modal-body {
+                    .n8 {
+                        .n2 {
+                            .n3{
+                                padding: 0px 10px;
+                                font-size: 13px;
+                                top: 49.4%;
+                            }
+                            .n4{
+                                padding: 0px 10px;
+                                font-size: 13px;
+                                top: 49.4%;
+                            }
+                            .n5{
+                                top: 57.1%;
+                                padding: 0px 10px;
+                                font-size: 13px;
+                            }
+                            .n6 {
+                                font-size: 13px;
+
+                                padding: 8px 8px;
+                            }
+                            .n7 {
+                                font-size: 13px;
+                                left: 30%;
+                                width: 42%;
+                                padding: 7px 10px 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@keyframes show {
+    0% {
+        top: -60%;
+        opacity: 0;
+    }
+  
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+  }
+
+
+
+
+
+
+

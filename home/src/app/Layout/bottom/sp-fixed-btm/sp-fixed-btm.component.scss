@@ -9,6 +9,7 @@
       .slogan-title {
         font-size: 34px;
         color: #444;
+        padding-bottom: 20px;
       }
       .slogan-des {
         text-align: center;
@@ -39,17 +40,49 @@
           margin-bottom: 0px;
           color: #fff;
           padding-top: 30px;
-
         }
         .des {
           font-size: 16px;
           color: #fff;
           padding-bottom: 16px;
         }
-
       }
     }
 
+    .images{
+      width: 100%;
+      height: auto;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1199px) {
+  #sp-fixed-btm {
+    .sp-container-fluid {
+      .imgQuayPhim {
+        img {
+          width: 100%;
+          min-height: 250px;
+          object-fit: cover;
+        }
+      }
+      .sologan {
+        .sologan-wrap {
+          padding:50px 10px;
 
+          .title {
+            text-align: center;
+            font-size: 28px;
+
+          }
+          .des {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 }

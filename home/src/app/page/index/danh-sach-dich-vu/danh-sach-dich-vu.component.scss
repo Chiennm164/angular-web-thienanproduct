@@ -1,10 +1,30 @@
-
 #listDichVu {
-     .listDichVu-wrap {
-       display: flex;
-       flex-wrap: wrap;
-       .dichVu-item {
-         width: 33.333333333%;
-       }
-     }
-   }
+  .listDichVu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .dichVu-item {
+      width: 33.333333333%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  #listDichVu {
+    .listDichVu-wrap {
+
+      .dichVu-item {
+        width: 50%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  #listDichVu {
+    .listDichVu-wrap {
+
+      .dichVu-item {
+        width: 100%;
+      }
+    }
+  }
+}

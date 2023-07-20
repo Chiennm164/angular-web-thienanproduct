@@ -1,5 +1,4 @@
-<!-- <div id="sp-header" class="overlay"> -->
-<div id="sp-header" class="">
+<div id="sp-header" [ngClass]="checkShowMenu?'' : 'overlay' ">
   <div class="container">
     <div class="row">
       <div class="sp-header-wrap">
@@ -10,10 +9,10 @@
             </a>
           </div>
         </div>
-        <div id="sp-menu"  [ngStyle]="checkShowMenu? ({'display':'none'}) :({'display':'block '})"  class="col-lg-9 ">
+        <div id="sp-menu" [ngStyle]="checkShowMenu? ({'display':'none'}) :({'display':'block'})" class="col-lg-9 ">
           <nav class="sp-menu-nav" role="navigation">
-            <i id="btn-menu-mobile-close" (click)="showMenu()"><svg xmlns="http://www.w3.org/2000/svg"
-                width="32" height="32" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+            <i id="btn-menu-mobile-close" (click)="showMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                height="32" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
                 <path
                   d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
                 <path
@@ -22,12 +21,16 @@
             <ul class="sp-menu-ul">
               <li class="sp-menu-li sp-menu-li-trangchu">
                 <div class="sp-menu-li-wrap">
-                  <a routerLink="/index" class="sp-menu-li-text" href="">Trang chủ</a>
+                  <a routerLink="/index" (click)="showMenu()" class="sp-menu-li-text" href="">Trang chủ</a>
                 </div>
               </li>
               <li *ngFor="let menu of listMenu" class="sp-menu-li">
                 <div class="sp-menu-li-wrap">
-                  <a href="#" (click)="false" class="sp-menu-li-text" href="">{{menu.name}}</a>
+                  <a *ngIf="innerWidth >=1200" routerLink="{{menu.path !== '' ? menu.path : null}}" href="#"
+                    class="sp-menu-li-text" href="">{{menu.name}}</a>
+                  <a *ngIf="innerWidth <1200" routerLink="{{menu.path !== '' ? menu.path : null}}" href="#"
+                    (click)="menu.valueLv1.length>0 ? 'false' :showMenu()" class="sp-menu-li-text"
+                    href="">{{menu.name}}</a>
                   <i class="sp-menu-li-span" *ngIf="menu.valueLv1.length>0"><svg xmlns="http://www.w3.org/2000/svg"
                       width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                       <path fill-rule="evenodd"
@@ -74,8 +77,8 @@
         <div id="sp-search" class="col-lg-1 ">
           <div class="sp-search-wrap col-lg-11">
             <div class="search">
-              <div class="wrap-input-search">
-                <input [class]="showInputSearch? 'input-search tran' :'input-search '" type="text"
+              <div  class="wrap-input-search">
+                <input @runTopSearchInput [ngClass]="showInputSearch? 'input-search tran' :'input-search '" type="text"
                   placeholder="Từ khoá">
               </div>
               <i (click)="showInput()"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
@@ -89,8 +92,8 @@
               <div class="lang-en"><a href="">EN</a></div>
             </div>
             <div id="btn-menu-mobile-show" (click)="showMenu()" class="col-lg-1">
-              <i  ><svg xmlns="http://www.w3.org/2000/svg" width="32"
-                  height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <i><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+                  viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>

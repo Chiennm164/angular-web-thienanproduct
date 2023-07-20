@@ -7,8 +7,10 @@
     backface-visibility: hidden;
     padding: 0;
     z-index: -1;
+    margin-top: 90px;
+
     .banner-content{
-        transform: translateY(30%);
+        transform: translateY(50%);
         .banner-title{
             max-width: 420px;
             font-size: 36px;
@@ -72,7 +74,7 @@
             justify-content: center;
             button.dkbtn{
                 border-color: #FFFFFF;
-                background: transparent;                
+                background: transparent;
             }
         }
     }

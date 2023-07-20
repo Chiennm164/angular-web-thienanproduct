@@ -1,0 +1,68 @@
+.menu-dich-vu{
+    .sp-module-title {
+        margin: 0 0 15px;
+        padding-bottom: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: left;
+        color: #444;
+        padding-top: 0;
+        position: relative;
+        text-transform: uppercase;
+        &:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 2px;
+            background: #b92a30;
+            bottom: 10px;
+            position: absolute;
+        }
+    }
+
+    .sp-module-content {
+        background: #fafaf8;
+        padding: 20px;
+        padding-top: 10px;
+        .menu{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            .item{
+                display: block;
+                border-bottom: 1px solid #f3f3f3;
+                a{
+                    display: inline-flex;
+                    padding: 5px 0;
+                    line-height: 24px;
+                    padding: 10px 0;
+                    color: #242424;
+                    font-size: 18px;
+                    line-height: 24px;
+                    display: block;
+                    position: relative;
+                    padding-left: 30px;
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        background: url(https://vietstarmax.vn/wp-content/uploads/2022/07/play-button-s.webp) no-repeat;
+                        float: left;
+                        margin-right: 10px;
+                        vertical-align: top;
+                        top: 10px;
+                        position: absolute;
+                        left: 0;
+                        margin-left: 0;
+                    }
+
+                    &:hover{
+                        color: #b8292f;
+                    }
+                }
+            }
+        }
+    }
+
+}

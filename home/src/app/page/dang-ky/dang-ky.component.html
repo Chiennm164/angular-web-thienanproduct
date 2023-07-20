@@ -1,0 +1,25 @@
+<div id="modal-DangKy" *ngIf="showModal">
+    <div class="modal-dialogs">
+        <div class="modal-content">
+            <button type="button" class="close" (click)="closeModal()">×</button>
+            <div class="modal-body">
+                <div class="n8">
+                    <a href="https://colormedia.vn/colormedia-khoi-dong-goi-truyen-thong-khoi-su-dau-xuan-diem-nhan-cho-cuoc-chay-dua-truyen-thong-tet-2023-34251013" class="n0">
+                    </a>
+                    <img class="n1" src="https://colormedia.vn/public/upload/Kh%E1%BB%9Fi%20s%E1%BB%B1%20%C4%91%E1%BA%A7u%20Xu%C3%A2n/WEB%20T%E1%BA%BET.png">
+                    <form class="n2" (submit)="submitForm($event)" [formGroup]="registerForm">
+                        <input type="text" formControlName="name" class="form-controls n3" name="Name" placeholder="Họ &amp; Tên của bạn">
+                        <input type="text" formControlName="phone" pattern="(\+84|0)(9|8|7|5|3)[0-9]{8}" class="form-controls n4" name="Phone" placeholder="Số điện thoại">
+                        <input type="text" formControlName="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-controls n5" name="Email" placeholder="Email">
+                        <input type="hidden" name="Zone" value="Khởi sự đầu xuân">
+                        <textarea formControlName="message" class="form-controls n6" name="Note" placeholder="Doanh nghiệp"></textarea>
+                        <button type="submit" class="btn n7" >Đăng ký ngay</button>
+                        <p class="text-center n9"><a href="/colormedia-khoi-dong-goi-truyen-thong-khoi-su-dau-xuan-diem-nhan-cho-cuoc-chay-dua-truyen-thong-tet-2023-34251013" target="_blank"><i>Xem chi tiết tại đây</i></a></p>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

@@ -9,7 +9,7 @@
             <div class="sppb-col">
                 <span *ngFor="let item of contentLeft">
                     <p class="loi-ich-title">{{item.title}}</p>
-                    <p *ngFor="let itemText of item.desc">{{itemText}}</p>
+                    <p *ngFor="let itemText of item.desc"><i class="arrow right"></i> {{itemText}}</p>
                 </span>
             </div>
         </div>
@@ -18,7 +18,7 @@
             <div class="sppb-col">
                 <span *ngFor="let item of contentRight">
                     <p class="loi-ich-title">{{item.title}}</p>
-                    <p *ngFor="let itemText of item.desc">{{itemText}}</p>
+                    <p *ngFor="let itemText of item.desc"><i class="arrow right"></i>{{itemText}}</p>
                 </span>
             </div>
         </div>
@@ -35,7 +35,7 @@
             <div class="sppb-addon">
                 <h3 class="sppb-addon-title">{{luuY.title}}</h3>
                 <div class="sppb-addon-content-luu-y">
-                    <p class="info" *ngFor="let item of luuY.desc">{{item}}</p>
+                    <p class="info" *ngFor="let item of luuY.desc"> {{item}}</p>
 
                 </div>
             </div>

@@ -1,18 +1,30 @@
 <div class="tvc-banner" [ngStyle]="{'background-image': 'url(' + list.background + ')'}"  >
-    <div class="background">
-        <div class="banner-content body-wrapper row " [ngClass]="list.colorTextWhite? 'colorWhite': ''">
-            <div class="col-12">
-                <div class="banner-title">
-                    {{list.title}}
-                </div>
-                <div class="banner-desc">
-                    {{list.desc}}
-                </div>
-                <div class="banner-btn">
-                    <button id="myBtn" class="dkbtn">Đăng ký tư vấn</button>
+    <div class="container">
+        <div class="background">
+            <div class="banner-content row " [ngClass]="list.colorTextWhite? 'colorWhite': ''">
+                <div class="col-12">
+                    <div class="banner-title">
+                        {{list.title}}
+                    </div>
+                    <div class="banner-desc">
+                        {{list.desc}}
+                    </div>
+                    <div class="btn-dangkytuvan">
+                        <div class="btn-dangkytuvan-wrap">
+                             <div class="images">
+                                  <img src="https://vietstarmax.vn/wp-content/uploads/2022/06/contact-ico.webp"
+                                       alt="">
+                             </div>
+                             <div class="text">
+                                  Đăng ký tư vấn
+                             </div>
+                        </div>
+
+                   </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 </div>

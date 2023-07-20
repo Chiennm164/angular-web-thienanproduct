@@ -22,6 +22,8 @@ p{
   font-size: 18px;
   font-weight: 400;
   color: #000000;
+  padding: 0;
+  margin: 0;
 }
 .active-lang {
   color: #b8292f !important;
@@ -90,6 +92,13 @@ p{
     }
   }
 }
+
+.text-emphasize{
+  font-size: 20px;
+
+}
+
+
 @keyframes btnDangKyTuVan {
   0% {
     margin-left: 6px;
@@ -105,3 +114,18 @@ p{
 }
 
 
+@keyframes pulse {
+  0% {
+      transform: scale(1)
+  }
+
+  100% {
+      transform: scale(1.05)
+  }
+}
+
+@keyframes spin1 {
+  0%   {transform:rotate(0deg);}
+  50% {transform:rotate(180deg);}
+  100% {transform:rotate(360deg);}
+}
